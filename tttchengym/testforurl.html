@@ -1,0 +1,2274 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh"
+      lang="zh" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>安全/优盾_高防服务 UAnti-DDoS-UCloud文档中心</title>
+    <!--    <title>--><!-- [--><!--]</title>-->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="security,uads,index"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="ucloud-docs"/>
+<link rel="start" href="/"/>
+<link rel="alternate" type="text/html" title="纯HTML" href="/_export/xhtml/security/uads/index"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup 语言" href="/_export/raw/security/uads/index"/>
+<link rel="canonical" href="https://docs.ucloud.cn/security/uads/index"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"/>
+<link rel="stylesheet" type="text/css" href="/lib/plugins/codemirror/dist/styles.min.css?v=20160703"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='security:uads';var JSINFO = {"id":"security:uads:index","namespace":"security:uads","move_renameokay":false,"isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"></script>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/JSINFO.plugin_codemirror = {"acronyms":["WYSIWYG","MathML","AFAICS","FLOSS","IANAL","AFAIK","ASCII","TL;DR","ROTFL","AFAIR","PITA","OTOH","MSIE","KISS","IMHO","IIRC","HTML","RTFM","WTF?","ASAP","spec","YMMV","LGPL","FOSS","LOL","W3C","MHz","URI","TIA","RFC","OSS","TOC","OMG","URL","IMO","FAQ","FTP","FUD","LAN","EOT","EOM","DNS","EOF","EOL","GHz","GPL","API","IRC","IRL","IOW","ACL","GUI","CMS","BTW","CSS","GB","MB","IE","OS"],"baseURL":"\/lib\/plugins\/codemirror","camelcase":false,"codesyntax":1,"entities":["<->","->","<-","<=>","=>","<=",">>","<<","---","--","(c)","(tm)","(r)","..."],"iconURL":"\/lib\/plugins\/codemirror\/settings.png","languages":["css","scilab","gwbasic","6502acme","ezt","c_mac","plsql","rexx","groovy","apache","epc","asp","netrexx","prolog","xpp","bnf","vb","clojure","modula3","cpp","m68k","falcon","gambas","ispfpanel","purebasic","smalltalk","nagios","vhdl","scala","tsql","lotusformulas","pic16","io","gettext","cpp-qt","e","gnuplot","caddcl","mpasm","scl","scheme","sas","sparql","f1","cil","stonescript","applescript","bibtex","pixelbender","llvm","freeswitch","mapbasic","ruby","hicest","oracle11","haxe","email","genie","dart","perl","fsharp","z80","parigp","arm","locobasic","div","text","bf","properties","gdb","basic4gl","4cs","fo","erlang","dos","visualprolog","boo","lotusscript","batch","68000devpac","rails","providex","octave","hq9plus","parasail","xbasic","cmake","java","mxml","reg","make","csharp","ocaml","systemverilog","vala","jcl","objeck","objc","sass","logtalk","nginx","ada","actionscript","urbi","dcs","lolcode","asm","yaml","dcl","kixtart","unicon","genero","inno","postgresql","eiffel","php-brief","mmix","pascal","vbscript","c_winapi","bascomavr","delphi","tcl","lsl2","avisynth","rsplus","asymptote","rust","fortran","whois","lisp","bash","aimms","pike","freebasic","pf","glsl","gml","idl","cuesheet","qbasic","algol68","oxygene","ecmascript","d","newlisp","verilog","awk","cfm","lb","proftpd","visualfoxpro","coffeescript","nsis","sdlbasic","sql","oberon2","ocaml-brief","powerbuilder","euphoria","java5","autoit","pcre","abap","per","pys60","blitzbasic","xml","xorg_conf","6502tasm","modula2","vbnet","latex","povray","cobol","pycon","haskell","rpmspec","html4strict","cadlisp","autohotkey","typoscript","upc","whitespace","xojo","magiksf","dcpu16","ini","oobas","klonecpp","smarty","mysql","ldif","go","javascript","6502kickass","diff","chapel","robots","thinbasic","j","chaiscript","intercal","powershell","matlab","lua","oracle8","pli","c","actionscript3","mirc","oorexx","zxbasic","teraterm","q","dot","python","autoconf","jquery","klonec","uscript","lscript","icon","rbs","winbatch","cfdg","racket","perl6","spark","vim","rebol","vedit","twig","c_loadrunner","php","oz","apt_sources","progress","html5","cpp-winapi"],"mathjax":false,"nativeeditor":"0","schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"smileys":["8-)","8-O","8-o",":-(",":-)","=)",":-\/",":-\\",":-?",":-D",":-P",":-o",":-O",":-x",":-X",":-|",";-)","m(","^_^",":?:",":!:","LOL","FIXME","DELETEME"],"version":"20160703"}
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codemirror/dist/scripts.min.js?v=20160703"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/ucloud/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/ucloud/images/apple-touch-icon.png" />
+        <!--    zoomify.css-->
+    <link href="https://static.ucloud.cn/7f209fe9d1655fc448f28929baafec63.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+    <script type="text/javascript">
+        var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '6b767e7fa13640a48f97e18e8045c9dc']);_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ucloud.growing.io']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+
+<div id="dokuwiki__site">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_ucloud         hasSidebar">
+                
+        <!-- ********** HEADER ********** -->
+        <div class="docs-header">
+            <div class="main">
+
+                <div class="nav-bar clearfix">
+                    <a href="https://www.ucloud.cn"  title="返回官网首页"><span class="docs-logo"></span></a>                    <div class="hz-wrapper pull-right tr">
+                        <a href="https://www.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-home"></span>官网</a>                        <a href="https://console.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-console"></span>控制台</a>                        <div class="docs-login-wrapper logout">
+                            <a href="https://accountv2.ucloud.cn/userinfo"  class="login-user-name" title="前往用户中心"></a><a href="javascript:void(0);"  onclick="goLoginPage()" class="header-link login">登录</a><a href="https://account.ucloud.cn/cas/register"  class="header-link signup">注册</a><a href="https://account.ucloud.cn/cas/logout"  class="header-link logout" title="退出登录">退出</a>                        </div>
+                    </div>
+                </div>
+
+                <div class="header-search-bar clearfix">
+                    <div class="header-title pull-left">
+                        <a href="/index"  title="文档中心首页"><h1 class="title">文档中心</h1></a>                    </div>
+
+                    <div class="header-search-wrapper pull-right">
+                        <form action="/index" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="search-input-wrapper"><input type="hidden" name="do" value="search" /><input type="text" growing-track="true" placeholder="请输入搜索内容" autocomplete="off" disableautocomplete id="qsearch__in" accesskey="f" name="id" class="edit search-input" /><span class="icon-search"></span><button type="submit" class="header-search-btn" title="搜索">搜索</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER TOOLS -->
+                <!-- /header -->
+
+        <div class="main J_docs-content-main" style="position: relative;">
+
+            <!-- ********** ASIDE ********** -->
+                            <div id="dokuwiki__aside">
+                    <div class="popup-pdlist-wrapper">
+                        <div class="pdlist-inner pd" data-max-height = "480"><!-- EDIT1 PLUGIN_WRAP_START [0-] --><div class="wrap_pd_list plugin_wrap">
+<div><div id="nojs_indexmenu_13292841345b22658c281cf" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Ctestdir%257Ctestsort%257Cupd-docs%257Capi-docs%257Capi-docs-az%257Capi%257Cdocs_admin%257Chide%257Cstorage_cdn%253Aumq%257Ccompute%253Aautoscaling%257Csimpleservice%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Cmessage%257Cregister%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="open"><div class="li"><a href="/compute/index" class="indexmenu_idx_head">计算</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/compute/uhost/index" class="indexmenu_idx_head">云主机 UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhybrid/index" class="indexmenu_idx_head">混合云 UHybrid</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uphost/index" class="indexmenu_idx_head">物理云主机 UPHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udhost/index" class="indexmenu_idx_head">私有专区 UDHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udocker/index" class="indexmenu_idx_head">容器集群 UDocker</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhub/index" class="indexmenu_idx_head">公共镜像库 UHub</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/ugc/index" class="indexmenu_idx_head">通用计算 UGC</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/caas" class="indexmenu_idx_head">容器服务 CaaS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/network/index" class="indexmenu_idx_head">网络</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/network/unet/index" class="indexmenu_idx_head">网络 UNet</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpc/index" class="indexmenu_idx_head">虚拟私有网络 VPC</a></div></li>
+<li class="closed"><div class="li"><a href="/network/firewall/index" class="indexmenu_idx_head">防火墙 Firewall</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vip/index" class="indexmenu_idx_head">内网虚拟IP地址 VIP</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udpn/index" class="indexmenu_idx_head">跨域通道 UDPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ulb/index" class="indexmenu_idx_head">负载均衡 ULB</a></div></li>
+<li class="closed"><div class="li"><a href="/network/pathx/index" class="indexmenu_idx_head">全球动态加速 PathX</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ipsec/index" class="indexmenu_idx_head">VPN 网关 IPSec VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpn/index" class="indexmenu_idx_head">虚拟网络 VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udee/index" class="indexmenu_idx_head">内网域名解析 UDEE</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/storage_cdn/index" class="indexmenu_idx_head">存储与CDN</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/storage_cdn/ufile/index" class="indexmenu_idx_head">﻿﻿对象存储 UFile</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/udisk/index" class="indexmenu_idx_head">云硬盘 UDisk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uda/index" class="indexmenu_idx_head">数据方舟 UDataArk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ucdn/index" class="indexmenu_idx_head">云分发 UCDN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn/index" class="indexmenu_idx_head">开放式分发节点 UODN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn2.0/index" class="indexmenu_idx_head">开放式分发节点 UODN2.0</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uarchive/index" class="indexmenu_idx_head">归档存储 UArchive</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufs/index" class="indexmenu_idx_head">文件存储 UFS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/database/index" class="indexmenu_idx_head">数据库</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/database/udb-mysql/index" class="indexmenu_idx_head">云数据库 MySQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-mongodb/index" class="indexmenu_idx_head">云数据库 MongoDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-pgsql/index" class="indexmenu_idx_head">云数据库 PostgreSQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-sqlserver/index" class="indexmenu_idx_head">云数据库 SQL Server</a></div></li>
+<li class="closed"><div class="li"><a href="/database/umem/index" class="indexmenu_idx_head">云内存 Memcache</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uredis/index" class="indexmenu_idx_head">云内存 Redis</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uddb/index" class="indexmenu_idx_head">分布式数据库 UDDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udts/index" class="indexmenu_idx_head">数据传输 UDTS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/video/index" class="indexmenu_idx_head">多媒体</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/video/umai/index" class="indexmenu_idx_head">媒体AI UMAI</a></div></li>
+<li class="closed"><div class="li"><a href="/video/umedia/index" class="indexmenu_idx_head">媒体工厂 UMedia</a></div></li>
+<li class="closed"><div class="li"><a href="/video/ulive/index" class="indexmenu_idx_head">直播云 ULive</a></div></li>
+<li class="closed"><div class="li"><a href="/video/uvideo/index" class="indexmenu_idx_head">视频云 UVideo</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/index" class="indexmenu_idx_head">安全/优盾</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/usa/index" class="indexmenu_idx_head">优盾 USec</a></div></li>
+<li class="closed"><div class="li"><a href="/security/usecurity/index" class="indexmenu_idx_head">DDoS基础防护</a></div></li>
+<li class="closed"><div class="li"><span class="curid"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></span></div></li>
+<li class="closed"><div class="li"><a href="/security/uhids" class="indexmenu_idx_head">主机入侵检测 UHIDS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/ussl/index" class="indexmenu_idx_head">SSL证书管理 USSL</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws/index" class="indexmenu_idx_head">WEB漏洞扫描系统（持续扫描） UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udbcp/index" class="indexmenu_idx_head">等保合规测评服务 UDBCP</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/analysis/index" class="indexmenu_idx_head">数据分析</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/analysis/ues/index" class="indexmenu_idx_head">ES服务 Elasticsearch</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uhadoop/index" class="indexmenu_idx_head">托管集群 UHadoop</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/udw/index" class="indexmenu_idx_head">云数据仓库 UDW</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uddp/index" class="indexmenu_idx_head">分布式数据处理 UDDP</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/ukafka/index" class="indexmenu_idx_head">分布式消息系统 UKafka</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uscheduler/index" class="indexmenu_idx_head">调度系统 UScheduler</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/ai" class="indexmenu_idx_head">人工智能</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/ai/gpu" class="indexmenu_idx_head">GPU云主机 GPU UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-inference/index" class="indexmenu_idx_head">AI在线服务 UAI-Inference</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/ai-lab" class="indexmenu_idx_head">AI实验室 Vitality</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-train" class="indexmenu_idx_head">AI 训练服务 UAI-Train</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/management_monitor/index" class="indexmenu_idx_head">管理与监控</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/management_monitor/umon/index" class="indexmenu_idx_head">云监控 UMon</a></div></li>
+<li class="level2" ><div class="li"><a href="/management_monitor/security_lock" class="wikilink1" title="安全锁 Security Lock">安全锁 Security Lock</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/manage/index" class="indexmenu_idx_head">操作日志 ULog</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/uproject/index" class="indexmenu_idx_head">账号与权限管理 UAM</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/software/index" class="indexmenu_idx_head">程序应用</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/software/dns/index" class="indexmenu_idx_head">DNS应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/docker/index" class="indexmenu_idx_head">Docker应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/vpn" class="indexmenu_idx_head">VPN应用指南</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/charge/index" class="indexmenu_idx_head">购买和计费</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/charge/invoice/index" class="indexmenu_idx_head">发票管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/order/index" class="indexmenu_idx_head">订单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/renew/index" class="indexmenu_idx_head">续费管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/transaction/index" class="indexmenu_idx_head">交易管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/bill/index" class="indexmenu_idx_head">账单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/charge/index" class="indexmenu_idx_head">计费方式</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/account/index" class="indexmenu_idx_head">账号</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/account/identity_verification/index" class="indexmenu_idx_head">实名认证</a></div></li>
+<li class="closed"><div class="li"><a href="/account/register" class="indexmenu_idx_head">账号注册</a></div></li>
+<li class="closed"><div class="li"><a href="/account/remind" class="indexmenu_idx_head">用户提醒</a></div></li>
+<li class="closed"><div class="li"><a href="/account/login/index" class="indexmenu_idx_head">账号登录</a></div></li>
+<li class="closed"><div class="li"><a href="/account/security" class="indexmenu_idx_head">账号安全</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/other/index" class="indexmenu_idx_head">其他</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/other/zj_migrate" class="wikilink1" title="浙江可用区A升级上海二可用区B迁移建议方案">浙江可用区A升级上海二可用区B迁移建议方案</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/global" class="wikilink1" title="海外业务部署常见问题">海外业务部署常见问题</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/message" class="wikilink1" title="短信包">短信包</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/beian/index" class="indexmenu_idx_head">备案</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/beian/beian1/index" class="indexmenu_idx_head">备案帮助文档</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/beianintro" class="wikilink1" title="备案服务说明">备案服务说明</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/useguide" class="wikilink1" title="备案系统使用指南">备案系统使用指南</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/policy/index" class="indexmenu_idx_head">政策与规范</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/policy/agreement/index" class="indexmenu_idx_head">其他协议</a></div></li>
+<li class="closed"><div class="li"><a href="/policy/sla" class="indexmenu_idx_head">服务等级协议（SLA）</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/domain/index" class="indexmenu_idx_head">域名与网站</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/domain/udnr/index" class="indexmenu_idx_head">域名服务 UDnr</a></div></li>
+</ul></li>
+</ul>
+</div></div>
+</div><!-- EDIT2 PLUGIN_WRAP_END [0-] -->
+
+</div>                    </div>
+                    <div class="J_left-sidebar pad aside include group">
+                        
+                        <div class="sidebar-header">
+                            全部产品                            <span class="icon-sidebar-menu"></span>
+                        </div>
+
+                        <div class="docs-sidebar-wrapper">
+                            
+<div><div id="nojs_indexmenu_20327352215b226597aa4b0" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Capi%253Aunet-api%253Anewfirewall%257Capi%253Auvideo-api%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Capi%253Audisk-api%253Acheck_buffer_io%257Capi%253Audisk-api%253Acheck_udisk_allowance%257Ccompute%253Auhost%253Aconcepts%257Cstorage_cdn%253Aucdn%253Acname%257Cstorage_cdn%253Aucdn%253Acommon%257Cstorage_cdn%253Aucdn%253Acname%253Afile%257Cstorage_cdn%253Aucdn%253Alive_stream%257Cstorage_cdn%253Aucdn%253Aweb%257Cstorage_cdn%253Aucdn%253Afile%257Capi%253Aufile-api%253Ainner_bucket_varibale%257Capi%253Aufile-api%253Ainner_gw_err_code%257Capi%253Aufile-api%253Ainner_proxy_err_code%257Capi%253Aufile-api%253Acreate_video_bucket%257Capi%253Aufile-api%253Aadd_bucket_domain%257Cnetwork%253Aunet%253Avip%257Cnetwork%253Aunet%253Acommon%257Cnetwork%253Aunet%253Afirewall%257Ccompute%253Acaas%253Afaq%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+<div class="li"><span class="curid"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></span></div>
+<ul class="idx">
+<li class="open"><div class="li"><a href="/security/uads/concepts" class="indexmenu_idx_head">产品简介</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/overview" class="wikilink1" title="产品概述">产品概述</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/term" class="wikilink1" title="名词解释">名词解释</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/advantage" class="wikilink1" title="产品优势">产品优势</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/function" class="wikilink1" title="主要功能">主要功能</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/change" class="wikilink1" title="升级记录">升级记录</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/concepts/ipnumbers" class="wikilink1" title="IP配额">IP配额</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uads/architecture" class="wikilink1" title="架构和原理简介">架构和原理简介</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/uads/common" class="wikilink1" title="快速上手">快速上手</a></div></li>
+<li class="open"><div class="li"><a href="/security/uads/opintro/index" class="indexmenu_idx_head">操作指南</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uads/opintro/add" class="wikilink1" title="1、添加高防（初次购买）">1、添加高防（初次购买）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/opintro/upgrade" class="wikilink1" title="2、调整高防">2、调整高防</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/opintro/addip" class="wikilink1" title="3、添加IP">3、添加IP</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/opintro/dashboard" class="wikilink1" title="4、监控视图">4、监控视图</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uads/price" class="indexmenu_idx_head">产品价格</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uads/price/prices" class="wikilink1" title="1、产品价格">1、产品价格</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/price/invalid" class="wikilink1" title="2、到期说明">2、到期说明</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/price/upgrade" class="wikilink1" title="3、升降级高防服务">3、升降级高防服务</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uads/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="open"><div class="li"><a href="/security/uads/faq/index" class="indexmenu_idx_head">FAQ</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uads/faq/game" class="wikilink1" title="常见问题">常见问题</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uads/faq/howtogetip" class="wikilink1" title="如何获取用户的真实IP地址？">如何获取用户的真实IP地址？</a></div></li>
+</ul></li>
+</ul></li>
+</div></div>
+
+
+                        </div>
+                                                <div class="clearer"></div>
+                    </div>
+                </div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content">
+                <div class="pad docs-content">
+                                        
+                    <!-- BREADCRUMBS -->
+                                            <div class="breadcrumbs content-breadcrumbs"><span class="home"><a href="/index" class="wikilink1">文档中心</a></span> > <a href="/index#pd" >产品文档</a> > 高防服务 UAnti-DDoS</div>
+                    
+                    <div class="page docs-main-content">
+                        <!-- wikipage start -->
+                        
+
+
+<h1 class="sectionedit1" id="高防服务_uanti-ddos">高防服务 UAnti-DDoS</h1>
+<div class="level1">
+
+<p>
+UAnti-DDoS（UCloud Anti DDoS）高防为已备案的域名或源站IP（包括非UCloud的弹性外网IP）提供DDoS攻击防护。当用户的域名或源站IP（包括非UCloud的弹性外网IP）在遭受大流量的DDoS攻击时，可以通过高防IP代理源站IP面向用户，隐藏源站IP，将攻击流量引流到高防IP，确保源站的稳定正常运行。
+</p>
+
+<p>
+<strong>目录</strong>
+</p>
+
+<p>
+<a href="/security/uads/concepts" class="wikilink1" title="产品简介">产品简介</a>
+</p>
+
+<p>
+<a href="/security/uads/opintro" class="wikilink1" title="架构和原理简介">架构和原理简介</a>
+</p>
+
+<p>
+<a href="/security/uads/common" class="wikilink1" title="快速上手">快速上手</a>
+</p>
+
+<p>
+<a href="/security/uads/opintro" class="wikilink1" title="操作指南">操作指南</a>
+</p>
+
+<p>
+<a href="/security/uads/price" class="wikilink1" title="产品价格">产品价格</a>
+</p>
+
+<p>
+<a href="/security/uads/warning" class="wikilink1" title="使用注意事项">使用注意事项</a>
+</p>
+
+<p>
+<a href="/security/uads/faq" class="wikilink1" title="FAQ">FAQ</a>
+</p>
+
+</div>
+
+                        <!-- wikipage stop -->
+                        <div class="clearer"></div>
+                    </div>
+
+                                        <div class="docs-support-bar">
+                        如有疑问请联系
+                        <a href="https://www.ucloud.cn/site/service.html"  title="点击访问技术支持页面" target="_blank">技术支持</a>                    </div>
+                    
+                                                        </div>
+            </div><!-- /content -->
+
+            <div class="clearer"></div>
+            <!--            <hr class="a11y" />-->
+
+            <!-- PAGE ACTIONS -->
+                    </div><!-- /wrapper -->
+
+        <!-- ********** FOOTER ********** -->
+        
+        <div class="page-footer-copyright">
+            Copyright © 2012-<span id="J_copyright-year"></span> UCloud 上海优刻得信息科技有限公司 ｜
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">沪ICP备 12020087</a>
+        </div>
+            </div>
+</div>
+
+<!--service tool-->
+<div class="service-tool">
+    <div class="content">
+        <a href="#service-tool-support" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-wechat"></span>
+            </div>
+        </a>
+        <a target="_blank" href="https://beianv2.ucloud.cn/">
+            <div class="link-wrap">
+                <span class="icon-urecord"></span>
+            </div>
+        </a>
+        <a href="#service-tool-qrcode" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-qr-code"></span>
+                <div class="service-tool-tips qrcode" id="service-tool-qrcode">
+                    <span class="service-caret"></span>
+                    <div class="content-wrapper">
+                        <img src="https://static.ucloud.cn/e69a4f822d7bfeb1cbc4104ab2d1fb3a.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="link-wrap back-to-top">
+            <span class="icon-arrow-up"></span>
+        </div>
+        <div class="service-tool-tips support" id="service-tool-support">
+            <span class="service-caret"></span>
+            <div class="content-wrapper">
+                <div class="content-cell blue">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售前咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://www.ucloud.cn/4000188113" target="_blank">线上咨询（5x9h）</a>
+                </div>
+                <span class="tips-division"></span>
+                <div class="content-cell purple">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售后咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://accountv2.ucloud.cn/work_ticket" target="_blank">提交工单（5x24h）</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/service tool-->
+
+<!-- /site -->
+<div class="no" style="display: none;">
+    <img src="/lib/exe/indexer.php?id=security%3Auads%3Aindex&amp;1529282992" width="2" height="1" alt="" /></div>
+<!--[if lte IE 8 ]>
+</div>
+<![endif]-->
+<!--jquery.scrollspy.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/6821cfdf2e223c0b0edceb6bf289b3e7.js"></script>
+<!--jquery.sticky-kit.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/5ebb3e6fb52217114a3ddeff2534b343.js"></script>
+<!--jquery.zoomify.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/091743cc037b6bacc06b92c7180d1373.js"></script>
+<!--jquery.scrollbar.js-->
+<!--<script type="text/javascript" src="https://static.ucloud.cn/0a3162ccea29242045f56283d0a8a281.js"></script>-->
+<script>
+    (function(w, d, t, u, n, i, s, a) {
+        w[n] = w[n] || {
+                q: [['set','aid', i]],
+                set: function(){this.q.push(['set'].concat(Array.prototype.slice.apply(arguments)))},
+                send: function(){this.q.push(['send'].concat(Array.prototype.slice.apply(arguments)))}
+            };
+
+        s = d.createElement(t);
+        a = d.getElementsByTagName(t)[0];
+        s.async = true;
+        s.crossOrigin = true;
+        s.src = u;
+        a.parentNode.insertBefore(s, a)
+    })(window, document, 'script', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'das-rpt.ucloud.cn/das.js?v=' + Math.random(), 'das', 'iywtleax');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48580821-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script>
+    document.getElementById('J_copyright-year').innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh"
+      lang="zh" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>安全/优盾_Web应用防火墙 UWAF-UCloud文档中心</title>
+    <!--    <title>--><!-- [--><!--]</title>-->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="security,uewaf"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="ucloud-docs"/>
+<link rel="start" href="/"/>
+<link rel="alternate" type="text/html" title="纯HTML" href="/_export/xhtml/security/uewaf"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup 语言" href="/_export/raw/security/uewaf"/>
+<link rel="canonical" href="https://docs.ucloud.cn/security/uewaf"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"/>
+<link rel="stylesheet" type="text/css" href="/lib/plugins/codemirror/dist/styles.min.css?v=20160703"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='security';var JSINFO = {"id":"security:uewaf","namespace":"security","move_renameokay":false,"isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"></script>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/JSINFO.plugin_codemirror = {"acronyms":["WYSIWYG","MathML","AFAICS","FLOSS","IANAL","AFAIK","ASCII","TL;DR","ROTFL","AFAIR","PITA","OTOH","MSIE","KISS","IMHO","IIRC","HTML","RTFM","WTF?","ASAP","spec","YMMV","LGPL","FOSS","LOL","W3C","MHz","URI","TIA","RFC","OSS","TOC","OMG","URL","IMO","FAQ","FTP","FUD","LAN","EOT","EOM","DNS","EOF","EOL","GHz","GPL","API","IRC","IRL","IOW","ACL","GUI","CMS","BTW","CSS","GB","MB","IE","OS"],"baseURL":"\/lib\/plugins\/codemirror","camelcase":false,"codesyntax":1,"entities":["<->","->","<-","<=>","=>","<=",">>","<<","---","--","(c)","(tm)","(r)","..."],"iconURL":"\/lib\/plugins\/codemirror\/settings.png","languages":["locobasic","html4strict","racket","gwbasic","tcl","oobas","cfm","sparql","gdb","chaiscript","objeck","rebol","ezt","vim","batch","aimms","spark","latex","autohotkey","d","rust","gettext","newlisp","erlang","4cs","inno","kixtart","apt_sources","rpmspec","io","actionscript","html5","winbatch","nginx","ruby","thinbasic","6502tasm","xorg_conf","nsis","uscript","css","mapbasic","boo","e","pascal","cfdg","qbasic","scheme","pike","mxml","dos","text","vala","visualfoxpro","twig","robots","c","lotusformulas","python","f1","blitzbasic","ini","actionscript3","dcpu16","oxygene","rsplus","q","lsl2","mirc","email","stonescript","apache","povray","haskell","lolcode","6502kickass","z80","asymptote","vbnet","matlab","php-brief","teraterm","cpp","whitespace","oracle11","j","algol68","falcon","fo","c_winapi","modula3","icon","applescript","javascript","pic16","euphoria","typoscript","xojo","gambas","rbs","postgresql","m68k","dcs","glsl","freeswitch","genie","vb","purebasic","php","pf","dot","ada","hq9plus","fsharp","gnuplot","dart","arm","vhdl","magiksf","pixelbender","autoit","basic4gl","bascomavr","freebasic","autoconf","pys60","hicest","gml","bnf","cuesheet","genero","jcl","perl6","systemverilog","netrexx","awk","rails","mpasm","cadlisp","ldif","haxe","modula2","lua","octave","klonecpp","cpp-qt","ecmascript","fortran","caddcl","sas","intercal","csharp","sdlbasic","scl","xpp","upc","dcl","mmix","smarty","tsql","xml","vedit","epc","eiffel","scilab","pcre","reg","lotusscript","klonec","68000devpac","cil","parasail","asm","go","llvm","abap","lscript","java","bash","cobol","pycon","logtalk","perl","ocaml-brief","verilog","c_mac","c_loadrunner","cpp-winapi","sass","whois","plsql","make","sql","objc","6502acme","properties","nagios","chapel","providex","oorexx","delphi","clojure","bf","oracle8","vbscript","rexx","smalltalk","urbi","ispfpanel","yaml","avisynth","oberon2","prolog","groovy","coffeescript","oz","idl","zxbasic","diff","xbasic","scala","pli","lisp","cmake","asp","proftpd","jquery","bibtex","progress","powerbuilder","mysql","visualprolog","parigp","per","lb","unicon","div","powershell","ocaml","java5"],"mathjax":false,"nativeeditor":"0","schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"smileys":["8-)","8-O","8-o",":-(",":-)","=)",":-\/",":-\\",":-?",":-D",":-P",":-o",":-O",":-x",":-X",":-|",";-)","m(","^_^",":?:",":!:","LOL","FIXME","DELETEME"],"version":"20160703"}
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codemirror/dist/scripts.min.js?v=20160703"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/ucloud/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/ucloud/images/apple-touch-icon.png" />
+        <!--    zoomify.css-->
+    <link href="https://static.ucloud.cn/7f209fe9d1655fc448f28929baafec63.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+    <script type="text/javascript">
+        var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '6b767e7fa13640a48f97e18e8045c9dc']);_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ucloud.growing.io']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+
+<div id="dokuwiki__site">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_ucloud         hasSidebar">
+                
+        <!-- ********** HEADER ********** -->
+        <div class="docs-header">
+            <div class="main">
+
+                <div class="nav-bar clearfix">
+                    <a href="https://www.ucloud.cn"  title="返回官网首页"><span class="docs-logo"></span></a>                    <div class="hz-wrapper pull-right tr">
+                        <a href="https://www.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-home"></span>官网</a>                        <a href="https://console.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-console"></span>控制台</a>                        <div class="docs-login-wrapper logout">
+                            <a href="https://accountv2.ucloud.cn/userinfo"  class="login-user-name" title="前往用户中心"></a><a href="javascript:void(0);"  onclick="goLoginPage()" class="header-link login">登录</a><a href="https://account.ucloud.cn/cas/register"  class="header-link signup">注册</a><a href="https://account.ucloud.cn/cas/logout"  class="header-link logout" title="退出登录">退出</a>                        </div>
+                    </div>
+                </div>
+
+                <div class="header-search-bar clearfix">
+                    <div class="header-title pull-left">
+                        <a href="/index"  title="文档中心首页"><h1 class="title">文档中心</h1></a>                    </div>
+
+                    <div class="header-search-wrapper pull-right">
+                        <form action="/index" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="search-input-wrapper"><input type="hidden" name="do" value="search" /><input type="text" growing-track="true" placeholder="请输入搜索内容" autocomplete="off" disableautocomplete id="qsearch__in" accesskey="f" name="id" class="edit search-input" /><span class="icon-search"></span><button type="submit" class="header-search-btn" title="搜索">搜索</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER TOOLS -->
+                <!-- /header -->
+
+        <div class="main J_docs-content-main" style="position: relative;">
+
+            <!-- ********** ASIDE ********** -->
+                            <div id="dokuwiki__aside">
+                    <div class="popup-pdlist-wrapper">
+                        <div class="pdlist-inner pd" data-max-height = "480"><!-- EDIT1 PLUGIN_WRAP_START [0-] --><div class="wrap_pd_list plugin_wrap">
+<div><div id="nojs_indexmenu_1889511665b22658361a20" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Ctestdir%257Ctestsort%257Cupd-docs%257Capi-docs%257Capi-docs-az%257Capi%257Cdocs_admin%257Chide%257Cstorage_cdn%253Aumq%257Ccompute%253Aautoscaling%257Csimpleservice%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Cmessage%257Cregister%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="open"><div class="li"><a href="/compute/index" class="indexmenu_idx_head">计算</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/compute/uhost/index" class="indexmenu_idx_head">云主机 UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhybrid/index" class="indexmenu_idx_head">混合云 UHybrid</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uphost/index" class="indexmenu_idx_head">物理云主机 UPHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udhost/index" class="indexmenu_idx_head">私有专区 UDHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udocker/index" class="indexmenu_idx_head">容器集群 UDocker</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhub/index" class="indexmenu_idx_head">公共镜像库 UHub</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/ugc/index" class="indexmenu_idx_head">通用计算 UGC</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/caas" class="indexmenu_idx_head">容器服务 CaaS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/network/index" class="indexmenu_idx_head">网络</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/network/unet/index" class="indexmenu_idx_head">网络 UNet</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpc/index" class="indexmenu_idx_head">虚拟私有网络 VPC</a></div></li>
+<li class="closed"><div class="li"><a href="/network/firewall/index" class="indexmenu_idx_head">防火墙 Firewall</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vip/index" class="indexmenu_idx_head">内网虚拟IP地址 VIP</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udpn/index" class="indexmenu_idx_head">跨域通道 UDPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ulb/index" class="indexmenu_idx_head">负载均衡 ULB</a></div></li>
+<li class="closed"><div class="li"><a href="/network/pathx/index" class="indexmenu_idx_head">全球动态加速 PathX</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ipsec/index" class="indexmenu_idx_head">VPN 网关 IPSec VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpn/index" class="indexmenu_idx_head">虚拟网络 VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udee/index" class="indexmenu_idx_head">内网域名解析 UDEE</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/storage_cdn/index" class="indexmenu_idx_head">存储与CDN</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/storage_cdn/udisk/index" class="indexmenu_idx_head">云硬盘 UDisk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufile/index" class="indexmenu_idx_head">﻿﻿对象存储 UFile</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uda/index" class="indexmenu_idx_head">数据方舟 UDataArk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ucdn/index" class="indexmenu_idx_head">云分发 UCDN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn/index" class="indexmenu_idx_head">开放式分发节点 UODN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn2.0/index" class="indexmenu_idx_head">开放式分发节点 UODN2.0</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uarchive/index" class="indexmenu_idx_head">归档存储 UArchive</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufs/index" class="indexmenu_idx_head">文件存储 UFS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/database/index" class="indexmenu_idx_head">数据库</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/database/udb-mysql/index" class="indexmenu_idx_head">云数据库 MySQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-mongodb/index" class="indexmenu_idx_head">云数据库 MongoDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-pgsql/index" class="indexmenu_idx_head">云数据库 PostgreSQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-sqlserver/index" class="indexmenu_idx_head">云数据库 SQL Server</a></div></li>
+<li class="closed"><div class="li"><a href="/database/umem/index" class="indexmenu_idx_head">云内存 Memcache</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uredis/index" class="indexmenu_idx_head">云内存 Redis</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uddb/index" class="indexmenu_idx_head">分布式数据库 UDDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udts/index" class="indexmenu_idx_head">数据传输 UDTS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/video/index" class="indexmenu_idx_head">多媒体</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/video/umai/index" class="indexmenu_idx_head">媒体AI UMAI</a></div></li>
+<li class="closed"><div class="li"><a href="/video/umedia/index" class="indexmenu_idx_head">媒体工厂 UMedia</a></div></li>
+<li class="closed"><div class="li"><a href="/video/ulive/index" class="indexmenu_idx_head">直播云 ULive</a></div></li>
+<li class="closed"><div class="li"><a href="/video/uvideo/index" class="indexmenu_idx_head">视频云 UVideo</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/index" class="indexmenu_idx_head">安全/优盾</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/usecurity/index" class="indexmenu_idx_head">DDoS基础防护</a></div></li>
+<li class="closed"><div class="li"><a href="/security/usa/index" class="indexmenu_idx_head">优盾 USec</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhids" class="indexmenu_idx_head">主机入侵检测 UHIDS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/ussl/index" class="indexmenu_idx_head">SSL证书管理 USSL</a></div></li>
+<li class="closed"><div class="li"><span class="curid"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></span></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws/index" class="indexmenu_idx_head">WEB漏洞扫描系统（持续扫描） UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udbcp/index" class="indexmenu_idx_head">等保合规测评服务 UDBCP</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/analysis/index" class="indexmenu_idx_head">数据分析</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/analysis/ues/index" class="indexmenu_idx_head">ES服务 Elasticsearch</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uhadoop/index" class="indexmenu_idx_head">托管集群 UHadoop</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/udw/index" class="indexmenu_idx_head">云数据仓库 UDW</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uddp/index" class="indexmenu_idx_head">分布式数据处理 UDDP</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/ukafka/index" class="indexmenu_idx_head">分布式消息系统 UKafka</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uscheduler/index" class="indexmenu_idx_head">调度系统 UScheduler</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/ai" class="indexmenu_idx_head">人工智能</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/ai/gpu" class="indexmenu_idx_head">GPU云主机 GPU UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-inference/index" class="indexmenu_idx_head">AI在线服务 UAI-Inference</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/ai-lab" class="indexmenu_idx_head">AI实验室 Vitality</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-train" class="indexmenu_idx_head">AI 训练服务 UAI-Train</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/management_monitor/index" class="indexmenu_idx_head">管理与监控</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/management_monitor/umon/index" class="indexmenu_idx_head">云监控 UMon</a></div></li>
+<li class="level2" ><div class="li"><a href="/management_monitor/security_lock" class="wikilink1" title="安全锁 Security Lock">安全锁 Security Lock</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/manage/index" class="indexmenu_idx_head">操作日志 ULog</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/uproject/index" class="indexmenu_idx_head">账号与权限管理 UAM</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/software/index" class="indexmenu_idx_head">程序应用</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/software/dns/index" class="indexmenu_idx_head">DNS应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/docker/index" class="indexmenu_idx_head">Docker应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/vpn" class="indexmenu_idx_head">VPN应用指南</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/account/index" class="indexmenu_idx_head">账号</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/account/register" class="indexmenu_idx_head">账号注册</a></div></li>
+<li class="closed"><div class="li"><a href="/account/identity_verification/index" class="indexmenu_idx_head">实名认证</a></div></li>
+<li class="closed"><div class="li"><a href="/account/remind" class="indexmenu_idx_head">用户提醒</a></div></li>
+<li class="closed"><div class="li"><a href="/account/login/index" class="indexmenu_idx_head">账号登录</a></div></li>
+<li class="closed"><div class="li"><a href="/account/security" class="indexmenu_idx_head">账号安全</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/charge/index" class="indexmenu_idx_head">购买和计费</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/charge/invoice/index" class="indexmenu_idx_head">发票管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/renew/index" class="indexmenu_idx_head">续费管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/transaction/index" class="indexmenu_idx_head">交易管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/bill/index" class="indexmenu_idx_head">账单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/order/index" class="indexmenu_idx_head">订单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/charge/index" class="indexmenu_idx_head">计费方式</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/other/index" class="indexmenu_idx_head">其他</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/other/zj_migrate" class="wikilink1" title="浙江可用区A升级上海二可用区B迁移建议方案">浙江可用区A升级上海二可用区B迁移建议方案</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/global" class="wikilink1" title="海外业务部署常见问题">海外业务部署常见问题</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/message" class="wikilink1" title="短信包">短信包</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/beian/index" class="indexmenu_idx_head">备案</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/beian/beianintro" class="wikilink1" title="备案服务说明">备案服务说明</a></div></li>
+<li class="closed"><div class="li"><a href="/beian/beian1/index" class="indexmenu_idx_head">备案帮助文档</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/useguide" class="wikilink1" title="备案系统使用指南">备案系统使用指南</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/policy/index" class="indexmenu_idx_head">政策与规范</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/policy/sla" class="indexmenu_idx_head">服务等级协议（SLA）</a></div></li>
+<li class="closed"><div class="li"><a href="/policy/agreement/index" class="indexmenu_idx_head">其他协议</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/domain/index" class="indexmenu_idx_head">域名与网站</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/domain/udnr/index" class="indexmenu_idx_head">域名服务 UDnr</a></div></li>
+</ul></li>
+</ul>
+</div></div>
+</div><!-- EDIT2 PLUGIN_WRAP_END [0-] -->
+
+</div>                    </div>
+                    <div class="J_left-sidebar pad aside include group">
+                        
+                        <div class="sidebar-header">
+                            全部产品                            <span class="icon-sidebar-menu"></span>
+                        </div>
+
+                        <div class="docs-sidebar-wrapper">
+                            
+<div><div id="nojs_indexmenu_18055520135b2265837d5ac" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Capi%253Aunet-api%253Anewfirewall%257Capi%253Auvideo-api%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Capi%253Audisk-api%253Acheck_buffer_io%257Capi%253Audisk-api%253Acheck_udisk_allowance%257Ccompute%253Auhost%253Aconcepts%257Cstorage_cdn%253Aucdn%253Acname%257Cstorage_cdn%253Aucdn%253Acommon%257Cstorage_cdn%253Aucdn%253Acname%253Afile%257Cstorage_cdn%253Aucdn%253Alive_stream%257Cstorage_cdn%253Aucdn%253Aweb%257Cstorage_cdn%253Aucdn%253Afile%257Capi%253Aufile-api%253Ainner_bucket_varibale%257Capi%253Aufile-api%253Ainner_gw_err_code%257Capi%253Aufile-api%253Ainner_proxy_err_code%257Capi%253Aufile-api%253Acreate_video_bucket%257Capi%253Aufile-api%253Aadd_bucket_domain%257Cnetwork%253Aunet%253Avip%257Cnetwork%253Aunet%253Acommon%257Cnetwork%253Aunet%253Afirewall%257Ccompute%253Acaas%253Afaq%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+<div class="li"><span class="curid"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></span></div>
+<ul class="idx">
+<li class="open"><div class="li"><a href="/security/uewaf/concepts" class="indexmenu_idx_head">产品简介</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uewaf/concepts/name" class="wikilink1" title="名词解释">名词解释</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/concepts/overview" class="wikilink1" title="产品概述">产品概述</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/concepts/choose" class="wikilink1" title="产品选型">产品选型</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/concepts/function" class="wikilink1" title="主要功能">主要功能</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/concepts/advantage" class="wikilink1" title="产品优势">产品优势</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uewaf/common/index" class="indexmenu_idx_head">快速上手</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uewaf/common/first" class="wikilink1" title="接入UWAF">接入UWAF</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/common/cdn" class="wikilink1" title="CDN结合UWAF">CDN结合UWAF</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/common/ads" class="wikilink1" title="高防服务结合UWAF">高防服务结合UWAF</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uewaf/opintro" class="indexmenu_idx_head">操作指南</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/domain" class="wikilink1" title="域名管理">域名管理</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/rules" class="wikilink1" title="防护设置">防护设置</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/alert" class="wikilink1" title="告警设置">告警设置</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/report" class="wikilink1" title="安全报表">安全报表</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/black" class="wikilink1" title="黑白名单">黑白名单</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/bot" class="wikilink1" title="机器行为检测">机器行为检测</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/opintro/config" class="wikilink1" title="高级功能设置">高级功能设置</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uewaf/product" class="indexmenu_idx_head">产品购买指导</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uewaf/product/price" class="wikilink1" title="产品价格">产品价格</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/product/expire" class="wikilink1" title="产品过期">产品过期</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uewaf/product/choose" class="wikilink1" title="产品选型">产品选型</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uewaf/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/uewaf/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul></li>
+</div></div>
+
+
+                        </div>
+                                                <div class="clearer"></div>
+                    </div>
+                </div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content">
+                <div class="pad docs-content">
+                                        
+                    <!-- BREADCRUMBS -->
+                                            <div class="breadcrumbs content-breadcrumbs"><span class="home"><a href="/index" class="wikilink1">文档中心</a></span> > <a href="/security/index" class="wikilink1">安全/优盾</a> > Web应用防火墙 UWAF</div>
+                    
+                    <div class="page docs-main-content">
+                        <!-- wikipage start -->
+                        
+
+
+<h1 class="sectionedit1" id="web应用防火墙_uwaf">Web应用防火墙 UWAF</h1>
+<div class="level1">
+
+<p>
+WAF是部署在web服务器前，用于保护网站抵御来自外部和内部的攻击。企业应用防火墙可以保护所有需要web应用防护的客户，不仅限于UCloud的设备和网络上的网站。使用者可以根据自身网站情况定制防护策略，也可以采用系统提供的默认策略进行防护。
+</p>
+
+<p>
+<strong>目录</strong>
+</p>
+
+<div><div id="nojs_indexmenu_13590091015b226611ed7c9" data-jsajax="%26sort%3Dd%26msort%3Dindexmenu_n%26nsort%3D1" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/uewaf/concepts" class="indexmenu_idx_head">产品简介</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf/common/index" class="indexmenu_idx_head">快速上手</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf/opintro" class="indexmenu_idx_head">操作指南</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf/product" class="indexmenu_idx_head">产品购买指导</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uewaf/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uewaf/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</div></div>
+
+</div>
+
+                        <!-- wikipage stop -->
+                        <div class="clearer"></div>
+                    </div>
+
+                                        <div class="docs-support-bar">
+                        如有疑问请联系
+                        <a href="https://www.ucloud.cn/site/service.html"  title="点击访问技术支持页面" target="_blank">技术支持</a>                    </div>
+                    
+                                                        </div>
+            </div><!-- /content -->
+
+            <div class="clearer"></div>
+            <!--            <hr class="a11y" />-->
+
+            <!-- PAGE ACTIONS -->
+                    </div><!-- /wrapper -->
+
+        <!-- ********** FOOTER ********** -->
+        
+        <div class="page-footer-copyright">
+            Copyright © 2012-<span id="J_copyright-year"></span> UCloud 上海优刻得信息科技有限公司 ｜
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">沪ICP备 12020087</a>
+        </div>
+            </div>
+</div>
+
+<!--service tool-->
+<div class="service-tool">
+    <div class="content">
+        <a href="#service-tool-support" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-wechat"></span>
+            </div>
+        </a>
+        <a target="_blank" href="https://beianv2.ucloud.cn/">
+            <div class="link-wrap">
+                <span class="icon-urecord"></span>
+            </div>
+        </a>
+        <a href="#service-tool-qrcode" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-qr-code"></span>
+                <div class="service-tool-tips qrcode" id="service-tool-qrcode">
+                    <span class="service-caret"></span>
+                    <div class="content-wrapper">
+                        <img src="https://static.ucloud.cn/e69a4f822d7bfeb1cbc4104ab2d1fb3a.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="link-wrap back-to-top">
+            <span class="icon-arrow-up"></span>
+        </div>
+        <div class="service-tool-tips support" id="service-tool-support">
+            <span class="service-caret"></span>
+            <div class="content-wrapper">
+                <div class="content-cell blue">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售前咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://www.ucloud.cn/4000188113" target="_blank">线上咨询（5x9h）</a>
+                </div>
+                <span class="tips-division"></span>
+                <div class="content-cell purple">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售后咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://accountv2.ucloud.cn/work_ticket" target="_blank">提交工单（5x24h）</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/service tool-->
+
+<!-- /site -->
+<div class="no" style="display: none;">
+    <img src="/lib/exe/indexer.php?id=security%3Auewaf&amp;1529282993" width="2" height="1" alt="" /></div>
+<!--[if lte IE 8 ]>
+</div>
+<![endif]-->
+<!--jquery.scrollspy.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/6821cfdf2e223c0b0edceb6bf289b3e7.js"></script>
+<!--jquery.sticky-kit.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/5ebb3e6fb52217114a3ddeff2534b343.js"></script>
+<!--jquery.zoomify.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/091743cc037b6bacc06b92c7180d1373.js"></script>
+<!--jquery.scrollbar.js-->
+<!--<script type="text/javascript" src="https://static.ucloud.cn/0a3162ccea29242045f56283d0a8a281.js"></script>-->
+<script>
+    (function(w, d, t, u, n, i, s, a) {
+        w[n] = w[n] || {
+                q: [['set','aid', i]],
+                set: function(){this.q.push(['set'].concat(Array.prototype.slice.apply(arguments)))},
+                send: function(){this.q.push(['send'].concat(Array.prototype.slice.apply(arguments)))}
+            };
+
+        s = d.createElement(t);
+        a = d.getElementsByTagName(t)[0];
+        s.async = true;
+        s.crossOrigin = true;
+        s.src = u;
+        a.parentNode.insertBefore(s, a)
+    })(window, document, 'script', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'das-rpt.ucloud.cn/das.js?v=' + Math.random(), 'das', 'iywtleax');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48580821-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script>
+    document.getElementById('J_copyright-year').innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh"
+      lang="zh" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>安全/优盾_堡垒机 UHAS-UCloud文档中心</title>
+    <!--    <title>--><!-- [--><!--]</title>-->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="security,uhas,index"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="ucloud-docs"/>
+<link rel="start" href="/"/>
+<link rel="alternate" type="text/html" title="纯HTML" href="/_export/xhtml/security/uhas/index"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup 语言" href="/_export/raw/security/uhas/index"/>
+<link rel="canonical" href="https://docs.ucloud.cn/security/uhas/index"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"/>
+<link rel="stylesheet" type="text/css" href="/lib/plugins/codemirror/dist/styles.min.css?v=20160703"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='security:uhas';var JSINFO = {"id":"security:uhas:index","namespace":"security:uhas","move_renameokay":false,"isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"></script>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/JSINFO.plugin_codemirror = {"acronyms":["WYSIWYG","MathML","AFAICS","FLOSS","IANAL","AFAIK","ASCII","TL;DR","ROTFL","AFAIR","PITA","OTOH","MSIE","KISS","IMHO","IIRC","HTML","RTFM","WTF?","ASAP","spec","YMMV","LGPL","FOSS","LOL","W3C","MHz","URI","TIA","RFC","OSS","TOC","OMG","URL","IMO","FAQ","FTP","FUD","LAN","EOT","EOM","DNS","EOF","EOL","GHz","GPL","API","IRC","IRL","IOW","ACL","GUI","CMS","BTW","CSS","GB","MB","IE","OS"],"baseURL":"\/lib\/plugins\/codemirror","camelcase":false,"codesyntax":1,"entities":["<->","->","<-","<=>","=>","<=",">>","<<","---","--","(c)","(tm)","(r)","..."],"iconURL":"\/lib\/plugins\/codemirror\/settings.png","languages":["locobasic","html4strict","racket","gwbasic","tcl","oobas","cfm","sparql","gdb","chaiscript","objeck","rebol","ezt","vim","batch","aimms","spark","latex","autohotkey","d","rust","gettext","newlisp","erlang","4cs","inno","kixtart","apt_sources","rpmspec","io","actionscript","html5","winbatch","nginx","ruby","thinbasic","6502tasm","xorg_conf","nsis","uscript","css","mapbasic","boo","e","pascal","cfdg","qbasic","scheme","pike","mxml","dos","text","vala","visualfoxpro","twig","robots","c","lotusformulas","python","f1","blitzbasic","ini","actionscript3","dcpu16","oxygene","rsplus","q","lsl2","mirc","email","stonescript","apache","povray","haskell","lolcode","6502kickass","z80","asymptote","vbnet","matlab","php-brief","teraterm","cpp","whitespace","oracle11","j","algol68","falcon","fo","c_winapi","modula3","icon","applescript","javascript","pic16","euphoria","typoscript","xojo","gambas","rbs","postgresql","m68k","dcs","glsl","freeswitch","genie","vb","purebasic","php","pf","dot","ada","hq9plus","fsharp","gnuplot","dart","arm","vhdl","magiksf","pixelbender","autoit","basic4gl","bascomavr","freebasic","autoconf","pys60","hicest","gml","bnf","cuesheet","genero","jcl","perl6","systemverilog","netrexx","awk","rails","mpasm","cadlisp","ldif","haxe","modula2","lua","octave","klonecpp","cpp-qt","ecmascript","fortran","caddcl","sas","intercal","csharp","sdlbasic","scl","xpp","upc","dcl","mmix","smarty","tsql","xml","vedit","epc","eiffel","scilab","pcre","reg","lotusscript","klonec","68000devpac","cil","parasail","asm","go","llvm","abap","lscript","java","bash","cobol","pycon","logtalk","perl","ocaml-brief","verilog","c_mac","c_loadrunner","cpp-winapi","sass","whois","plsql","make","sql","objc","6502acme","properties","nagios","chapel","providex","oorexx","delphi","clojure","bf","oracle8","vbscript","rexx","smalltalk","urbi","ispfpanel","yaml","avisynth","oberon2","prolog","groovy","coffeescript","oz","idl","zxbasic","diff","xbasic","scala","pli","lisp","cmake","asp","proftpd","jquery","bibtex","progress","powerbuilder","mysql","visualprolog","parigp","per","lb","unicon","div","powershell","ocaml","java5"],"mathjax":false,"nativeeditor":"0","schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"smileys":["8-)","8-O","8-o",":-(",":-)","=)",":-\/",":-\\",":-?",":-D",":-P",":-o",":-O",":-x",":-X",":-|",";-)","m(","^_^",":?:",":!:","LOL","FIXME","DELETEME"],"version":"20160703"}
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codemirror/dist/scripts.min.js?v=20160703"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/ucloud/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/ucloud/images/apple-touch-icon.png" />
+        <!--    zoomify.css-->
+    <link href="https://static.ucloud.cn/7f209fe9d1655fc448f28929baafec63.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+    <script type="text/javascript">
+        var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '6b767e7fa13640a48f97e18e8045c9dc']);_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ucloud.growing.io']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+
+<div id="dokuwiki__site">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_ucloud         hasSidebar">
+                
+        <!-- ********** HEADER ********** -->
+        <div class="docs-header">
+            <div class="main">
+
+                <div class="nav-bar clearfix">
+                    <a href="https://www.ucloud.cn"  title="返回官网首页"><span class="docs-logo"></span></a>                    <div class="hz-wrapper pull-right tr">
+                        <a href="https://www.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-home"></span>官网</a>                        <a href="https://console.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-console"></span>控制台</a>                        <div class="docs-login-wrapper logout">
+                            <a href="https://accountv2.ucloud.cn/userinfo"  class="login-user-name" title="前往用户中心"></a><a href="javascript:void(0);"  onclick="goLoginPage()" class="header-link login">登录</a><a href="https://account.ucloud.cn/cas/register"  class="header-link signup">注册</a><a href="https://account.ucloud.cn/cas/logout"  class="header-link logout" title="退出登录">退出</a>                        </div>
+                    </div>
+                </div>
+
+                <div class="header-search-bar clearfix">
+                    <div class="header-title pull-left">
+                        <a href="/index"  title="文档中心首页"><h1 class="title">文档中心</h1></a>                    </div>
+
+                    <div class="header-search-wrapper pull-right">
+                        <form action="/index" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="search-input-wrapper"><input type="hidden" name="do" value="search" /><input type="text" growing-track="true" placeholder="请输入搜索内容" autocomplete="off" disableautocomplete id="qsearch__in" accesskey="f" name="id" class="edit search-input" /><span class="icon-search"></span><button type="submit" class="header-search-btn" title="搜索">搜索</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER TOOLS -->
+                <!-- /header -->
+
+        <div class="main J_docs-content-main" style="position: relative;">
+
+            <!-- ********** ASIDE ********** -->
+                            <div id="dokuwiki__aside">
+                    <div class="popup-pdlist-wrapper">
+                        <div class="pdlist-inner pd" data-max-height = "480"><!-- EDIT1 PLUGIN_WRAP_START [0-] --><div class="wrap_pd_list plugin_wrap">
+<div><div id="nojs_indexmenu_1889511665b22658361a20" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Ctestdir%257Ctestsort%257Cupd-docs%257Capi-docs%257Capi-docs-az%257Capi%257Cdocs_admin%257Chide%257Cstorage_cdn%253Aumq%257Ccompute%253Aautoscaling%257Csimpleservice%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Cmessage%257Cregister%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="open"><div class="li"><a href="/compute/index" class="indexmenu_idx_head">计算</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/compute/uhost/index" class="indexmenu_idx_head">云主机 UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhybrid/index" class="indexmenu_idx_head">混合云 UHybrid</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uphost/index" class="indexmenu_idx_head">物理云主机 UPHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udhost/index" class="indexmenu_idx_head">私有专区 UDHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udocker/index" class="indexmenu_idx_head">容器集群 UDocker</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhub/index" class="indexmenu_idx_head">公共镜像库 UHub</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/ugc/index" class="indexmenu_idx_head">通用计算 UGC</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/caas" class="indexmenu_idx_head">容器服务 CaaS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/network/index" class="indexmenu_idx_head">网络</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/network/unet/index" class="indexmenu_idx_head">网络 UNet</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpc/index" class="indexmenu_idx_head">虚拟私有网络 VPC</a></div></li>
+<li class="closed"><div class="li"><a href="/network/firewall/index" class="indexmenu_idx_head">防火墙 Firewall</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vip/index" class="indexmenu_idx_head">内网虚拟IP地址 VIP</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udpn/index" class="indexmenu_idx_head">跨域通道 UDPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ulb/index" class="indexmenu_idx_head">负载均衡 ULB</a></div></li>
+<li class="closed"><div class="li"><a href="/network/pathx/index" class="indexmenu_idx_head">全球动态加速 PathX</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ipsec/index" class="indexmenu_idx_head">VPN 网关 IPSec VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpn/index" class="indexmenu_idx_head">虚拟网络 VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udee/index" class="indexmenu_idx_head">内网域名解析 UDEE</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/storage_cdn/index" class="indexmenu_idx_head">存储与CDN</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/storage_cdn/udisk/index" class="indexmenu_idx_head">云硬盘 UDisk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufile/index" class="indexmenu_idx_head">﻿﻿对象存储 UFile</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uda/index" class="indexmenu_idx_head">数据方舟 UDataArk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ucdn/index" class="indexmenu_idx_head">云分发 UCDN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn/index" class="indexmenu_idx_head">开放式分发节点 UODN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn2.0/index" class="indexmenu_idx_head">开放式分发节点 UODN2.0</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uarchive/index" class="indexmenu_idx_head">归档存储 UArchive</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufs/index" class="indexmenu_idx_head">文件存储 UFS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/database/index" class="indexmenu_idx_head">数据库</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/database/udb-mysql/index" class="indexmenu_idx_head">云数据库 MySQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-mongodb/index" class="indexmenu_idx_head">云数据库 MongoDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-pgsql/index" class="indexmenu_idx_head">云数据库 PostgreSQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-sqlserver/index" class="indexmenu_idx_head">云数据库 SQL Server</a></div></li>
+<li class="closed"><div class="li"><a href="/database/umem/index" class="indexmenu_idx_head">云内存 Memcache</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uredis/index" class="indexmenu_idx_head">云内存 Redis</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uddb/index" class="indexmenu_idx_head">分布式数据库 UDDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udts/index" class="indexmenu_idx_head">数据传输 UDTS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/video/index" class="indexmenu_idx_head">多媒体</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/video/umai/index" class="indexmenu_idx_head">媒体AI UMAI</a></div></li>
+<li class="closed"><div class="li"><a href="/video/umedia/index" class="indexmenu_idx_head">媒体工厂 UMedia</a></div></li>
+<li class="closed"><div class="li"><a href="/video/ulive/index" class="indexmenu_idx_head">直播云 ULive</a></div></li>
+<li class="closed"><div class="li"><a href="/video/uvideo/index" class="indexmenu_idx_head">视频云 UVideo</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/index" class="indexmenu_idx_head">安全/优盾</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/usecurity/index" class="indexmenu_idx_head">DDoS基础防护</a></div></li>
+<li class="closed"><div class="li"><a href="/security/usa/index" class="indexmenu_idx_head">优盾 USec</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhids" class="indexmenu_idx_head">主机入侵检测 UHIDS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/ussl/index" class="indexmenu_idx_head">SSL证书管理 USSL</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></div></li>
+<li class="closed"><div class="li"><span class="curid"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></span></div></li>
+<li class="closed"><div class="li"><a href="/security/uws/index" class="indexmenu_idx_head">WEB漏洞扫描系统（持续扫描） UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udbcp/index" class="indexmenu_idx_head">等保合规测评服务 UDBCP</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/analysis/index" class="indexmenu_idx_head">数据分析</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/analysis/ues/index" class="indexmenu_idx_head">ES服务 Elasticsearch</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uhadoop/index" class="indexmenu_idx_head">托管集群 UHadoop</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/udw/index" class="indexmenu_idx_head">云数据仓库 UDW</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uddp/index" class="indexmenu_idx_head">分布式数据处理 UDDP</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/ukafka/index" class="indexmenu_idx_head">分布式消息系统 UKafka</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uscheduler/index" class="indexmenu_idx_head">调度系统 UScheduler</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/ai" class="indexmenu_idx_head">人工智能</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/ai/gpu" class="indexmenu_idx_head">GPU云主机 GPU UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-inference/index" class="indexmenu_idx_head">AI在线服务 UAI-Inference</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/ai-lab" class="indexmenu_idx_head">AI实验室 Vitality</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-train" class="indexmenu_idx_head">AI 训练服务 UAI-Train</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/management_monitor/index" class="indexmenu_idx_head">管理与监控</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/management_monitor/umon/index" class="indexmenu_idx_head">云监控 UMon</a></div></li>
+<li class="level2" ><div class="li"><a href="/management_monitor/security_lock" class="wikilink1" title="安全锁 Security Lock">安全锁 Security Lock</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/manage/index" class="indexmenu_idx_head">操作日志 ULog</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/uproject/index" class="indexmenu_idx_head">账号与权限管理 UAM</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/software/index" class="indexmenu_idx_head">程序应用</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/software/dns/index" class="indexmenu_idx_head">DNS应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/docker/index" class="indexmenu_idx_head">Docker应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/vpn" class="indexmenu_idx_head">VPN应用指南</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/account/index" class="indexmenu_idx_head">账号</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/account/register" class="indexmenu_idx_head">账号注册</a></div></li>
+<li class="closed"><div class="li"><a href="/account/identity_verification/index" class="indexmenu_idx_head">实名认证</a></div></li>
+<li class="closed"><div class="li"><a href="/account/remind" class="indexmenu_idx_head">用户提醒</a></div></li>
+<li class="closed"><div class="li"><a href="/account/login/index" class="indexmenu_idx_head">账号登录</a></div></li>
+<li class="closed"><div class="li"><a href="/account/security" class="indexmenu_idx_head">账号安全</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/charge/index" class="indexmenu_idx_head">购买和计费</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/charge/invoice/index" class="indexmenu_idx_head">发票管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/renew/index" class="indexmenu_idx_head">续费管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/transaction/index" class="indexmenu_idx_head">交易管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/bill/index" class="indexmenu_idx_head">账单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/order/index" class="indexmenu_idx_head">订单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/charge/index" class="indexmenu_idx_head">计费方式</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/other/index" class="indexmenu_idx_head">其他</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/other/zj_migrate" class="wikilink1" title="浙江可用区A升级上海二可用区B迁移建议方案">浙江可用区A升级上海二可用区B迁移建议方案</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/global" class="wikilink1" title="海外业务部署常见问题">海外业务部署常见问题</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/message" class="wikilink1" title="短信包">短信包</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/beian/index" class="indexmenu_idx_head">备案</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/beian/beianintro" class="wikilink1" title="备案服务说明">备案服务说明</a></div></li>
+<li class="closed"><div class="li"><a href="/beian/beian1/index" class="indexmenu_idx_head">备案帮助文档</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/useguide" class="wikilink1" title="备案系统使用指南">备案系统使用指南</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/policy/index" class="indexmenu_idx_head">政策与规范</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/policy/sla" class="indexmenu_idx_head">服务等级协议（SLA）</a></div></li>
+<li class="closed"><div class="li"><a href="/policy/agreement/index" class="indexmenu_idx_head">其他协议</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/domain/index" class="indexmenu_idx_head">域名与网站</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/domain/udnr/index" class="indexmenu_idx_head">域名服务 UDnr</a></div></li>
+</ul></li>
+</ul>
+</div></div>
+</div><!-- EDIT2 PLUGIN_WRAP_END [0-] -->
+
+</div>                    </div>
+                    <div class="J_left-sidebar pad aside include group">
+                        
+                        <div class="sidebar-header">
+                            全部产品                            <span class="icon-sidebar-menu"></span>
+                        </div>
+
+                        <div class="docs-sidebar-wrapper">
+                            
+<div><div id="nojs_indexmenu_18055520135b2265837d5ac" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Capi%253Aunet-api%253Anewfirewall%257Capi%253Auvideo-api%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Capi%253Audisk-api%253Acheck_buffer_io%257Capi%253Audisk-api%253Acheck_udisk_allowance%257Ccompute%253Auhost%253Aconcepts%257Cstorage_cdn%253Aucdn%253Acname%257Cstorage_cdn%253Aucdn%253Acommon%257Cstorage_cdn%253Aucdn%253Acname%253Afile%257Cstorage_cdn%253Aucdn%253Alive_stream%257Cstorage_cdn%253Aucdn%253Aweb%257Cstorage_cdn%253Aucdn%253Afile%257Capi%253Aufile-api%253Ainner_bucket_varibale%257Capi%253Aufile-api%253Ainner_gw_err_code%257Capi%253Aufile-api%253Ainner_proxy_err_code%257Capi%253Aufile-api%253Acreate_video_bucket%257Capi%253Aufile-api%253Aadd_bucket_domain%257Cnetwork%253Aunet%253Avip%257Cnetwork%253Aunet%253Acommon%257Cnetwork%253Aunet%253Afirewall%257Ccompute%253Acaas%253Afaq%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+<div class="li"><span class="curid"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></span></div>
+<ul class="idx">
+<li class="open"><div class="li"><a href="/security/uhas/concepts" class="indexmenu_idx_head">产品简介</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/concepts/overeview" class="wikilink1" title="产品概述">产品概述</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/concepts/term" class="wikilink1" title="名词解释">名词解释</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/concepts/case" class="wikilink1" title="使用场景">使用场景</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uhas/architecture" class="wikilink1" title="架构和原理简介">架构和原理简介</a></div></li>
+<li class="open"><div class="li"><a href="/security/uhas/common" class="indexmenu_idx_head">快速上手</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/common/super" class="wikilink1" title="旗舰版快速上手">旗舰版快速上手</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/common/pro" class="wikilink1" title="基础版快速上手">基础版快速上手</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uhas/opintro/index" class="indexmenu_idx_head">基础版操作指南</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro/console" class="wikilink1" title="控制台">控制台</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro/tools" class="wikilink1" title="连接工具">连接工具</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro/admin" class="wikilink1" title="管理员操作">管理员操作</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro/normal" class="wikilink1" title="运维人员操作">运维人员操作</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro/access" class="wikilink1" title="获取publickey和privatekey">获取publickey和privatekey</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uhas/opintro_super" class="indexmenu_idx_head">旗舰版操作指南</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/create" class="wikilink1" title="购买旗舰版">购买旗舰版</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/login" class="wikilink1" title="登录管理系统">登录管理系统</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/adduser" class="wikilink1" title="添加/导入用户">添加/导入用户</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/addserver" class="wikilink1" title="添加/导入主机及账户">添加/导入主机及账户</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/loginhost" class="wikilink1" title="登录主机">登录主机</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/files" class="wikilink1" title="文件传输">文件传输</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/block" class="wikilink1" title="新建命令拦截策略">新建命令拦截策略</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/authority" class="wikilink1" title="动态授权">动态授权</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/record" class="wikilink1" title="记录与审计">记录与审计</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/mobile" class="wikilink1" title="移动端下载与登录">移动端下载与登录</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/opintro_super/more" class="wikilink1" title="更多操作参见用户手册">更多操作参见用户手册</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uhas/manual" class="wikilink1" title="产品手册下载">产品手册下载</a></div></li>
+<li class="open"><div class="li"><a href="/security/uhas/upgrade" class="indexmenu_idx_head">升级记录</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/upgrade/super" class="wikilink1" title="旗舰版升级包下载">旗舰版升级包下载</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/upgrade/pro" class="wikilink1" title="基础版升级记录">基础版升级记录</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uhas/price" class="indexmenu_idx_head">产品价格</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/price/mode" class="wikilink1" title="计费模式">计费模式</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/price/jiage" class="wikilink1" title="产品价格">产品价格</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uhas/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="open"><div class="li"><a href="/security/uhas/faq_super" class="indexmenu_idx_head">旗舰版FAQ</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q1" class="wikilink1" title="功能问题（登录）">功能问题（登录）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q3" class="wikilink1" title="功能问题（文件管理）">功能问题（文件管理）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q6" class="wikilink1" title="功能问题（改密计划）">功能问题（改密计划）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q7" class="wikilink1" title="功能问题（授权和账户）">功能问题（授权和账户）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q8" class="wikilink1" title="功能问题（应用发布）">功能问题（应用发布）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q9" class="wikilink1" title="功能问题（审计）">功能问题（审计）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q2" class="wikilink1" title="应用环境和兼容性">应用环境和兼容性</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q4" class="wikilink1" title="如何升级新版本">如何升级新版本</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq_super/q5" class="wikilink1" title="随机生成密码的规则是什么？">随机生成密码的规则是什么？</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/uhas/faq" class="indexmenu_idx_head">基础版FAQ</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q1" class="wikilink1" title="功能问题（登录）">功能问题（登录）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q2" class="wikilink1" title="功能问题（连接工具）">功能问题（连接工具）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q3" class="wikilink1" title="功能问题（导入主机）">功能问题（导入主机）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q4" class="wikilink1" title="功能问题（账户与权限）">功能问题（账户与权限）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q5" class="wikilink1" title="功能问题（审计）">功能问题（审计）</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q9" class="wikilink1" title="如何升级新版本">如何升级新版本</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uhas/faq/q10" class="wikilink1" title="应用环境和兼容性">应用环境和兼容性</a></div></li>
+</ul></li>
+</ul></li>
+</div></div>
+
+
+                        </div>
+                                                <div class="clearer"></div>
+                    </div>
+                </div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content">
+                <div class="pad docs-content">
+                                        
+                    <!-- BREADCRUMBS -->
+                                            <div class="breadcrumbs content-breadcrumbs"><span class="home"><a href="/index" class="wikilink1">文档中心</a></span> > <a href="/index#pd" >产品文档</a> > 堡垒机 UHAS</div>
+                    
+                    <div class="page docs-main-content">
+                        <!-- wikipage start -->
+                        
+
+
+<h1 class="sectionedit1" id="堡垒机_uhas">堡垒机 UHAS</h1>
+<div class="level1">
+
+<p>
+堡垒机英文名为UHAS（UCloud Host Audit System），可以用于在运维人员访问云主机UHOST的过程中，充当跳板，具备完备的审计功能。
+</p>
+
+<p>
+<strong>目录</strong>
+</p>
+
+<div><div id="nojs_indexmenu_18568726935b22661477be7" data-jsajax="%26sort%3Dd%26msort%3Dindexmenu_n%26nsort%3D1" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/uhas/concepts" class="indexmenu_idx_head">产品简介</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uhas/architecture" class="wikilink1" title="架构和原理简介">架构和原理简介</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/common" class="indexmenu_idx_head">快速上手</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/opintro/index" class="indexmenu_idx_head">基础版操作指南</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/opintro_super" class="indexmenu_idx_head">旗舰版操作指南</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uhas/manual" class="wikilink1" title="产品手册下载">产品手册下载</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/upgrade" class="indexmenu_idx_head">升级记录</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/price" class="indexmenu_idx_head">产品价格</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uhas/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/faq_super" class="indexmenu_idx_head">旗舰版FAQ</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/faq" class="indexmenu_idx_head">基础版FAQ</a></div></li>
+</ul>
+</div></div>
+
+</div>
+
+                        <!-- wikipage stop -->
+                        <div class="clearer"></div>
+                    </div>
+
+                                        <div class="docs-support-bar">
+                        如有疑问请联系
+                        <a href="https://www.ucloud.cn/site/service.html"  title="点击访问技术支持页面" target="_blank">技术支持</a>                    </div>
+                    
+                                                        </div>
+            </div><!-- /content -->
+
+            <div class="clearer"></div>
+            <!--            <hr class="a11y" />-->
+
+            <!-- PAGE ACTIONS -->
+                    </div><!-- /wrapper -->
+
+        <!-- ********** FOOTER ********** -->
+        
+        <div class="page-footer-copyright">
+            Copyright © 2012-<span id="J_copyright-year"></span> UCloud 上海优刻得信息科技有限公司 ｜
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">沪ICP备 12020087</a>
+        </div>
+            </div>
+</div>
+
+<!--service tool-->
+<div class="service-tool">
+    <div class="content">
+        <a href="#service-tool-support" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-wechat"></span>
+            </div>
+        </a>
+        <a target="_blank" href="https://beianv2.ucloud.cn/">
+            <div class="link-wrap">
+                <span class="icon-urecord"></span>
+            </div>
+        </a>
+        <a href="#service-tool-qrcode" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-qr-code"></span>
+                <div class="service-tool-tips qrcode" id="service-tool-qrcode">
+                    <span class="service-caret"></span>
+                    <div class="content-wrapper">
+                        <img src="https://static.ucloud.cn/e69a4f822d7bfeb1cbc4104ab2d1fb3a.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="link-wrap back-to-top">
+            <span class="icon-arrow-up"></span>
+        </div>
+        <div class="service-tool-tips support" id="service-tool-support">
+            <span class="service-caret"></span>
+            <div class="content-wrapper">
+                <div class="content-cell blue">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售前咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://www.ucloud.cn/4000188113" target="_blank">线上咨询（5x9h）</a>
+                </div>
+                <span class="tips-division"></span>
+                <div class="content-cell purple">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售后咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://accountv2.ucloud.cn/work_ticket" target="_blank">提交工单（5x24h）</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/service tool-->
+
+<!-- /site -->
+<div class="no" style="display: none;">
+    <img src="/lib/exe/indexer.php?id=security%3Auhas%3Aindex&amp;1529282995" width="2" height="1" alt="" /></div>
+<!--[if lte IE 8 ]>
+</div>
+<![endif]-->
+<!--jquery.scrollspy.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/6821cfdf2e223c0b0edceb6bf289b3e7.js"></script>
+<!--jquery.sticky-kit.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/5ebb3e6fb52217114a3ddeff2534b343.js"></script>
+<!--jquery.zoomify.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/091743cc037b6bacc06b92c7180d1373.js"></script>
+<!--jquery.scrollbar.js-->
+<!--<script type="text/javascript" src="https://static.ucloud.cn/0a3162ccea29242045f56283d0a8a281.js"></script>-->
+<script>
+    (function(w, d, t, u, n, i, s, a) {
+        w[n] = w[n] || {
+                q: [['set','aid', i]],
+                set: function(){this.q.push(['set'].concat(Array.prototype.slice.apply(arguments)))},
+                send: function(){this.q.push(['send'].concat(Array.prototype.slice.apply(arguments)))}
+            };
+
+        s = d.createElement(t);
+        a = d.getElementsByTagName(t)[0];
+        s.async = true;
+        s.crossOrigin = true;
+        s.src = u;
+        a.parentNode.insertBefore(s, a)
+    })(window, document, 'script', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'das-rpt.ucloud.cn/das.js?v=' + Math.random(), 'das', 'iywtleax');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48580821-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script>
+    document.getElementById('J_copyright-year').innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh"
+      lang="zh" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>安全/优盾_数据库审计 UDB-Audit-UCloud文档中心</title>
+    <!--    <title>--><!-- [--><!--]</title>-->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="security,udas"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="ucloud-docs"/>
+<link rel="start" href="/"/>
+<link rel="alternate" type="text/html" title="纯HTML" href="/_export/xhtml/security/udas"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup 语言" href="/_export/raw/security/udas"/>
+<link rel="canonical" href="https://docs.ucloud.cn/security/udas"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"/>
+<link rel="stylesheet" type="text/css" href="/lib/plugins/codemirror/dist/styles.min.css?v=20160703"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='security';var JSINFO = {"id":"security:udas","namespace":"security","move_renameokay":false,"isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"></script>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/JSINFO.plugin_codemirror = {"acronyms":["WYSIWYG","MathML","AFAICS","FLOSS","IANAL","AFAIK","ASCII","TL;DR","ROTFL","AFAIR","PITA","OTOH","MSIE","KISS","IMHO","IIRC","HTML","RTFM","WTF?","ASAP","spec","YMMV","LGPL","FOSS","LOL","W3C","MHz","URI","TIA","RFC","OSS","TOC","OMG","URL","IMO","FAQ","FTP","FUD","LAN","EOT","EOM","DNS","EOF","EOL","GHz","GPL","API","IRC","IRL","IOW","ACL","GUI","CMS","BTW","CSS","GB","MB","IE","OS"],"baseURL":"\/lib\/plugins\/codemirror","camelcase":false,"codesyntax":1,"entities":["<->","->","<-","<=>","=>","<=",">>","<<","---","--","(c)","(tm)","(r)","..."],"iconURL":"\/lib\/plugins\/codemirror\/settings.png","languages":["css","scilab","gwbasic","6502acme","ezt","c_mac","plsql","rexx","groovy","apache","epc","asp","netrexx","prolog","xpp","bnf","vb","clojure","modula3","cpp","m68k","falcon","gambas","ispfpanel","purebasic","smalltalk","nagios","vhdl","scala","tsql","lotusformulas","pic16","io","gettext","cpp-qt","e","gnuplot","caddcl","mpasm","scl","scheme","sas","sparql","f1","cil","stonescript","applescript","bibtex","pixelbender","llvm","freeswitch","mapbasic","ruby","hicest","oracle11","haxe","email","genie","dart","perl","fsharp","z80","parigp","arm","locobasic","div","text","bf","properties","gdb","basic4gl","4cs","fo","erlang","dos","visualprolog","boo","lotusscript","batch","68000devpac","rails","providex","octave","hq9plus","parasail","xbasic","cmake","java","mxml","reg","make","csharp","ocaml","systemverilog","vala","jcl","objeck","objc","sass","logtalk","nginx","ada","actionscript","urbi","dcs","lolcode","asm","yaml","dcl","kixtart","unicon","genero","inno","postgresql","eiffel","php-brief","mmix","pascal","vbscript","c_winapi","bascomavr","delphi","tcl","lsl2","avisynth","rsplus","asymptote","rust","fortran","whois","lisp","bash","aimms","pike","freebasic","pf","glsl","gml","idl","cuesheet","qbasic","algol68","oxygene","ecmascript","d","newlisp","verilog","awk","cfm","lb","proftpd","visualfoxpro","coffeescript","nsis","sdlbasic","sql","oberon2","ocaml-brief","powerbuilder","euphoria","java5","autoit","pcre","abap","per","pys60","blitzbasic","xml","xorg_conf","6502tasm","modula2","vbnet","latex","povray","cobol","pycon","haskell","rpmspec","html4strict","cadlisp","autohotkey","typoscript","upc","whitespace","xojo","magiksf","dcpu16","ini","oobas","klonecpp","smarty","mysql","ldif","go","javascript","6502kickass","diff","chapel","robots","thinbasic","j","chaiscript","intercal","powershell","matlab","lua","oracle8","pli","c","actionscript3","mirc","oorexx","zxbasic","teraterm","q","dot","python","autoconf","jquery","klonec","uscript","lscript","icon","rbs","winbatch","cfdg","racket","perl6","spark","vim","rebol","vedit","twig","c_loadrunner","php","oz","apt_sources","progress","html5","cpp-winapi"],"mathjax":false,"nativeeditor":"0","schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"smileys":["8-)","8-O","8-o",":-(",":-)","=)",":-\/",":-\\",":-?",":-D",":-P",":-o",":-O",":-x",":-X",":-|",";-)","m(","^_^",":?:",":!:","LOL","FIXME","DELETEME"],"version":"20160703"}
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codemirror/dist/scripts.min.js?v=20160703"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/ucloud/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/ucloud/images/apple-touch-icon.png" />
+        <!--    zoomify.css-->
+    <link href="https://static.ucloud.cn/7f209fe9d1655fc448f28929baafec63.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+    <script type="text/javascript">
+        var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '6b767e7fa13640a48f97e18e8045c9dc']);_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ucloud.growing.io']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+
+<div id="dokuwiki__site">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_ucloud         hasSidebar">
+                
+        <!-- ********** HEADER ********** -->
+        <div class="docs-header">
+            <div class="main">
+
+                <div class="nav-bar clearfix">
+                    <a href="https://www.ucloud.cn"  title="返回官网首页"><span class="docs-logo"></span></a>                    <div class="hz-wrapper pull-right tr">
+                        <a href="https://www.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-home"></span>官网</a>                        <a href="https://console.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-console"></span>控制台</a>                        <div class="docs-login-wrapper logout">
+                            <a href="https://accountv2.ucloud.cn/userinfo"  class="login-user-name" title="前往用户中心"></a><a href="javascript:void(0);"  onclick="goLoginPage()" class="header-link login">登录</a><a href="https://account.ucloud.cn/cas/register"  class="header-link signup">注册</a><a href="https://account.ucloud.cn/cas/logout"  class="header-link logout" title="退出登录">退出</a>                        </div>
+                    </div>
+                </div>
+
+                <div class="header-search-bar clearfix">
+                    <div class="header-title pull-left">
+                        <a href="/index"  title="文档中心首页"><h1 class="title">文档中心</h1></a>                    </div>
+
+                    <div class="header-search-wrapper pull-right">
+                        <form action="/index" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="search-input-wrapper"><input type="hidden" name="do" value="search" /><input type="text" growing-track="true" placeholder="请输入搜索内容" autocomplete="off" disableautocomplete id="qsearch__in" accesskey="f" name="id" class="edit search-input" /><span class="icon-search"></span><button type="submit" class="header-search-btn" title="搜索">搜索</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER TOOLS -->
+                <!-- /header -->
+
+        <div class="main J_docs-content-main" style="position: relative;">
+
+            <!-- ********** ASIDE ********** -->
+                            <div id="dokuwiki__aside">
+                    <div class="popup-pdlist-wrapper">
+                        <div class="pdlist-inner pd" data-max-height = "480"><!-- EDIT1 PLUGIN_WRAP_START [0-] --><div class="wrap_pd_list plugin_wrap">
+<div><div id="nojs_indexmenu_13292841345b22658c281cf" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Ctestdir%257Ctestsort%257Cupd-docs%257Capi-docs%257Capi-docs-az%257Capi%257Cdocs_admin%257Chide%257Cstorage_cdn%253Aumq%257Ccompute%253Aautoscaling%257Csimpleservice%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Cmessage%257Cregister%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="open"><div class="li"><a href="/compute/index" class="indexmenu_idx_head">计算</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/compute/uhost/index" class="indexmenu_idx_head">云主机 UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhybrid/index" class="indexmenu_idx_head">混合云 UHybrid</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uphost/index" class="indexmenu_idx_head">物理云主机 UPHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udhost/index" class="indexmenu_idx_head">私有专区 UDHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udocker/index" class="indexmenu_idx_head">容器集群 UDocker</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhub/index" class="indexmenu_idx_head">公共镜像库 UHub</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/ugc/index" class="indexmenu_idx_head">通用计算 UGC</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/caas" class="indexmenu_idx_head">容器服务 CaaS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/network/index" class="indexmenu_idx_head">网络</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/network/unet/index" class="indexmenu_idx_head">网络 UNet</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpc/index" class="indexmenu_idx_head">虚拟私有网络 VPC</a></div></li>
+<li class="closed"><div class="li"><a href="/network/firewall/index" class="indexmenu_idx_head">防火墙 Firewall</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vip/index" class="indexmenu_idx_head">内网虚拟IP地址 VIP</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udpn/index" class="indexmenu_idx_head">跨域通道 UDPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ulb/index" class="indexmenu_idx_head">负载均衡 ULB</a></div></li>
+<li class="closed"><div class="li"><a href="/network/pathx/index" class="indexmenu_idx_head">全球动态加速 PathX</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ipsec/index" class="indexmenu_idx_head">VPN 网关 IPSec VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpn/index" class="indexmenu_idx_head">虚拟网络 VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udee/index" class="indexmenu_idx_head">内网域名解析 UDEE</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/storage_cdn/index" class="indexmenu_idx_head">存储与CDN</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/storage_cdn/ufile/index" class="indexmenu_idx_head">﻿﻿对象存储 UFile</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/udisk/index" class="indexmenu_idx_head">云硬盘 UDisk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uda/index" class="indexmenu_idx_head">数据方舟 UDataArk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ucdn/index" class="indexmenu_idx_head">云分发 UCDN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn/index" class="indexmenu_idx_head">开放式分发节点 UODN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn2.0/index" class="indexmenu_idx_head">开放式分发节点 UODN2.0</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uarchive/index" class="indexmenu_idx_head">归档存储 UArchive</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufs/index" class="indexmenu_idx_head">文件存储 UFS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/database/index" class="indexmenu_idx_head">数据库</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/database/udb-mysql/index" class="indexmenu_idx_head">云数据库 MySQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-mongodb/index" class="indexmenu_idx_head">云数据库 MongoDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-pgsql/index" class="indexmenu_idx_head">云数据库 PostgreSQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-sqlserver/index" class="indexmenu_idx_head">云数据库 SQL Server</a></div></li>
+<li class="closed"><div class="li"><a href="/database/umem/index" class="indexmenu_idx_head">云内存 Memcache</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uredis/index" class="indexmenu_idx_head">云内存 Redis</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uddb/index" class="indexmenu_idx_head">分布式数据库 UDDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udts/index" class="indexmenu_idx_head">数据传输 UDTS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/video/index" class="indexmenu_idx_head">多媒体</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/video/umai/index" class="indexmenu_idx_head">媒体AI UMAI</a></div></li>
+<li class="closed"><div class="li"><a href="/video/umedia/index" class="indexmenu_idx_head">媒体工厂 UMedia</a></div></li>
+<li class="closed"><div class="li"><a href="/video/ulive/index" class="indexmenu_idx_head">直播云 ULive</a></div></li>
+<li class="closed"><div class="li"><a href="/video/uvideo/index" class="indexmenu_idx_head">视频云 UVideo</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/index" class="indexmenu_idx_head">安全/优盾</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/usa/index" class="indexmenu_idx_head">优盾 USec</a></div></li>
+<li class="closed"><div class="li"><a href="/security/usecurity/index" class="indexmenu_idx_head">DDoS基础防护</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhids" class="indexmenu_idx_head">主机入侵检测 UHIDS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/ussl/index" class="indexmenu_idx_head">SSL证书管理 USSL</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws/index" class="indexmenu_idx_head">WEB漏洞扫描系统（持续扫描） UWS</a></div></li>
+<li class="closed"><div class="li"><span class="curid"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></span></div></li>
+<li class="closed"><div class="li"><a href="/security/udbcp/index" class="indexmenu_idx_head">等保合规测评服务 UDBCP</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/analysis/index" class="indexmenu_idx_head">数据分析</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/analysis/ues/index" class="indexmenu_idx_head">ES服务 Elasticsearch</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uhadoop/index" class="indexmenu_idx_head">托管集群 UHadoop</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/udw/index" class="indexmenu_idx_head">云数据仓库 UDW</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uddp/index" class="indexmenu_idx_head">分布式数据处理 UDDP</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/ukafka/index" class="indexmenu_idx_head">分布式消息系统 UKafka</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uscheduler/index" class="indexmenu_idx_head">调度系统 UScheduler</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/ai" class="indexmenu_idx_head">人工智能</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/ai/gpu" class="indexmenu_idx_head">GPU云主机 GPU UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-inference/index" class="indexmenu_idx_head">AI在线服务 UAI-Inference</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/ai-lab" class="indexmenu_idx_head">AI实验室 Vitality</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-train" class="indexmenu_idx_head">AI 训练服务 UAI-Train</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/management_monitor/index" class="indexmenu_idx_head">管理与监控</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/management_monitor/umon/index" class="indexmenu_idx_head">云监控 UMon</a></div></li>
+<li class="level2" ><div class="li"><a href="/management_monitor/security_lock" class="wikilink1" title="安全锁 Security Lock">安全锁 Security Lock</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/manage/index" class="indexmenu_idx_head">操作日志 ULog</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/uproject/index" class="indexmenu_idx_head">账号与权限管理 UAM</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/software/index" class="indexmenu_idx_head">程序应用</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/software/dns/index" class="indexmenu_idx_head">DNS应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/docker/index" class="indexmenu_idx_head">Docker应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/vpn" class="indexmenu_idx_head">VPN应用指南</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/charge/index" class="indexmenu_idx_head">购买和计费</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/charge/invoice/index" class="indexmenu_idx_head">发票管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/order/index" class="indexmenu_idx_head">订单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/renew/index" class="indexmenu_idx_head">续费管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/transaction/index" class="indexmenu_idx_head">交易管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/bill/index" class="indexmenu_idx_head">账单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/charge/index" class="indexmenu_idx_head">计费方式</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/account/index" class="indexmenu_idx_head">账号</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/account/identity_verification/index" class="indexmenu_idx_head">实名认证</a></div></li>
+<li class="closed"><div class="li"><a href="/account/register" class="indexmenu_idx_head">账号注册</a></div></li>
+<li class="closed"><div class="li"><a href="/account/remind" class="indexmenu_idx_head">用户提醒</a></div></li>
+<li class="closed"><div class="li"><a href="/account/login/index" class="indexmenu_idx_head">账号登录</a></div></li>
+<li class="closed"><div class="li"><a href="/account/security" class="indexmenu_idx_head">账号安全</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/other/index" class="indexmenu_idx_head">其他</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/other/zj_migrate" class="wikilink1" title="浙江可用区A升级上海二可用区B迁移建议方案">浙江可用区A升级上海二可用区B迁移建议方案</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/global" class="wikilink1" title="海外业务部署常见问题">海外业务部署常见问题</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/message" class="wikilink1" title="短信包">短信包</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/beian/index" class="indexmenu_idx_head">备案</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/beian/beian1/index" class="indexmenu_idx_head">备案帮助文档</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/beianintro" class="wikilink1" title="备案服务说明">备案服务说明</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/useguide" class="wikilink1" title="备案系统使用指南">备案系统使用指南</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/policy/index" class="indexmenu_idx_head">政策与规范</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/policy/agreement/index" class="indexmenu_idx_head">其他协议</a></div></li>
+<li class="closed"><div class="li"><a href="/policy/sla" class="indexmenu_idx_head">服务等级协议（SLA）</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/domain/index" class="indexmenu_idx_head">域名与网站</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/domain/udnr/index" class="indexmenu_idx_head">域名服务 UDnr</a></div></li>
+</ul></li>
+</ul>
+</div></div>
+</div><!-- EDIT2 PLUGIN_WRAP_END [0-] -->
+
+</div>                    </div>
+                    <div class="J_left-sidebar pad aside include group">
+                        
+                        <div class="sidebar-header">
+                            全部产品                            <span class="icon-sidebar-menu"></span>
+                        </div>
+
+                        <div class="docs-sidebar-wrapper">
+                            
+<div><div id="nojs_indexmenu_20327352215b226597aa4b0" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Capi%253Aunet-api%253Anewfirewall%257Capi%253Auvideo-api%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Capi%253Audisk-api%253Acheck_buffer_io%257Capi%253Audisk-api%253Acheck_udisk_allowance%257Ccompute%253Auhost%253Aconcepts%257Cstorage_cdn%253Aucdn%253Acname%257Cstorage_cdn%253Aucdn%253Acommon%257Cstorage_cdn%253Aucdn%253Acname%253Afile%257Cstorage_cdn%253Aucdn%253Alive_stream%257Cstorage_cdn%253Aucdn%253Aweb%257Cstorage_cdn%253Aucdn%253Afile%257Capi%253Aufile-api%253Ainner_bucket_varibale%257Capi%253Aufile-api%253Ainner_gw_err_code%257Capi%253Aufile-api%253Ainner_proxy_err_code%257Capi%253Aufile-api%253Acreate_video_bucket%257Capi%253Aufile-api%253Aadd_bucket_domain%257Cnetwork%253Aunet%253Avip%257Cnetwork%253Aunet%253Acommon%257Cnetwork%253Aunet%253Afirewall%257Ccompute%253Acaas%253Afaq%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+<div class="li"><span class="curid"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></span></div>
+<ul class="idx">
+<li class="open"><div class="li"><a href="/security/udas/concepts" class="indexmenu_idx_head">产品简介</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/udas/concepts/overeview" class="wikilink1" title="产品概述">产品概述</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/udas/concepts/support" class="wikilink1" title="支持范围">支持范围</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/udas/concepts/feature" class="wikilink1" title="功能特性">功能特性</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/udas/start" class="wikilink1" title="快速上手">快速上手</a></div></li>
+<li class="open"><div class="li"><a href="/security/udas/operation" class="indexmenu_idx_head">操作指南</a></div>
+<ul class="idx">
+<li class="open"><div class="li"><a href="/security/udas/operation/manage" class="indexmenu_idx_head">系统管理平台</a></div>
+<ul class="idx">
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/login" class="wikilink1" title="1、登录系统">1、登录系统</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/data" class="wikilink1" title="2、数据维护">2、数据维护</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/inform" class="wikilink1" title="3、通知服务">3、通知服务</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/upgrade" class="wikilink1" title="4、系统升级">4、系统升级</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/log" class="wikilink1" title="5、日志管理">5、日志管理</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/manage/system" class="wikilink1" title="6、系统管理">6、系统管理</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas/operation/manage/basic" class="indexmenu_idx_head">7、基本设置</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/udas/operation/rule" class="indexmenu_idx_head">规则管理平台</a></div>
+<ul class="idx">
+<li class="level4" ><div class="li"><a href="/security/udas/operation/rule/dashboard" class="wikilink1" title="1、整体预览">1、整体预览</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/rule/whole" class="wikilink1" title="2、全局参数设置">2、全局参数设置</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/rule/config" class="wikilink1" title="3、访问者信息配置">3、访问者信息配置</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas/operation/rule/object" class="indexmenu_idx_head">4、对象设置</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/rule/procedure" class="wikilink1" title="5、规则配置">5、规则配置</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/udas/operation/audit" class="indexmenu_idx_head">审计管理平台</a></div>
+<ul class="idx">
+<li class="level4" ><div class="li"><a href="/security/udas/operation/audit/login" class="wikilink1" title="1、登录系统">1、登录系统</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/audit/dashboard" class="wikilink1" title="2、预览">2、预览</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/audit/risk" class="wikilink1" title="3、风险管理">3、风险管理</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas/operation/audit/aud" class="indexmenu_idx_head">4、审计管理</a></div></li>
+<li class="level4" ><div class="li"><a href="/security/udas/operation/audit/report" class="wikilink1" title="5、报表管理">5、报表管理</a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/udas/manual" class="wikilink1" title="产品手册下载">产品手册下载</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/udas/price" class="wikilink1" title="产品价格">产品价格</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/udas/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+</ul></li>
+</div></div>
+
+
+                        </div>
+                                                <div class="clearer"></div>
+                    </div>
+                </div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content">
+                <div class="pad docs-content">
+                                        
+                    <!-- BREADCRUMBS -->
+                                            <div class="breadcrumbs content-breadcrumbs"><span class="home"><a href="/index" class="wikilink1">文档中心</a></span> > <a href="/security/index" class="wikilink1">安全/优盾</a> > 数据库审计 UDB-Audit</div>
+                    
+                    <div class="page docs-main-content">
+                        <!-- wikipage start -->
+                        
+
+
+<h1 class="sectionedit1" id="数据库审计_udb-audit">数据库审计 UDB-Audit</h1>
+<div class="level1">
+
+<p>
+目录
+</p>
+
+<div><div id="nojs_indexmenu_19917531115b22664f53ecd" data-jsajax="%26sort%3Dt" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/udas/concepts" class="indexmenu_idx_head">产品简介</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas/operation" class="indexmenu_idx_head">操作指南</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/udas/price" class="wikilink1" title="产品价格">产品价格</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/udas/manual" class="wikilink1" title="产品手册下载">产品手册下载</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/udas/warning" class="wikilink1" title="使用注意事项">使用注意事项</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/udas/start" class="wikilink1" title="快速上手">快速上手</a></div></li>
+</ul>
+</div></div>
+
+</div>
+
+                        <!-- wikipage stop -->
+                        <div class="clearer"></div>
+                    </div>
+
+                                        <div class="docs-support-bar">
+                        如有疑问请联系
+                        <a href="https://www.ucloud.cn/site/service.html"  title="点击访问技术支持页面" target="_blank">技术支持</a>                    </div>
+                    
+                                                        </div>
+            </div><!-- /content -->
+
+            <div class="clearer"></div>
+            <!--            <hr class="a11y" />-->
+
+            <!-- PAGE ACTIONS -->
+                    </div><!-- /wrapper -->
+
+        <!-- ********** FOOTER ********** -->
+        
+        <div class="page-footer-copyright">
+            Copyright © 2012-<span id="J_copyright-year"></span> UCloud 上海优刻得信息科技有限公司 ｜
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">沪ICP备 12020087</a>
+        </div>
+            </div>
+</div>
+
+<!--service tool-->
+<div class="service-tool">
+    <div class="content">
+        <a href="#service-tool-support" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-wechat"></span>
+            </div>
+        </a>
+        <a target="_blank" href="https://beianv2.ucloud.cn/">
+            <div class="link-wrap">
+                <span class="icon-urecord"></span>
+            </div>
+        </a>
+        <a href="#service-tool-qrcode" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-qr-code"></span>
+                <div class="service-tool-tips qrcode" id="service-tool-qrcode">
+                    <span class="service-caret"></span>
+                    <div class="content-wrapper">
+                        <img src="https://static.ucloud.cn/e69a4f822d7bfeb1cbc4104ab2d1fb3a.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="link-wrap back-to-top">
+            <span class="icon-arrow-up"></span>
+        </div>
+        <div class="service-tool-tips support" id="service-tool-support">
+            <span class="service-caret"></span>
+            <div class="content-wrapper">
+                <div class="content-cell blue">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售前咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://www.ucloud.cn/4000188113" target="_blank">线上咨询（5x9h）</a>
+                </div>
+                <span class="tips-division"></span>
+                <div class="content-cell purple">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售后咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://accountv2.ucloud.cn/work_ticket" target="_blank">提交工单（5x24h）</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/service tool-->
+
+<!-- /site -->
+<div class="no" style="display: none;">
+    <img src="/lib/exe/indexer.php?id=security%3Audas&amp;1529282996" width="2" height="1" alt="" /></div>
+<!--[if lte IE 8 ]>
+</div>
+<![endif]-->
+<!--jquery.scrollspy.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/6821cfdf2e223c0b0edceb6bf289b3e7.js"></script>
+<!--jquery.sticky-kit.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/5ebb3e6fb52217114a3ddeff2534b343.js"></script>
+<!--jquery.zoomify.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/091743cc037b6bacc06b92c7180d1373.js"></script>
+<!--jquery.scrollbar.js-->
+<!--<script type="text/javascript" src="https://static.ucloud.cn/0a3162ccea29242045f56283d0a8a281.js"></script>-->
+<script>
+    (function(w, d, t, u, n, i, s, a) {
+        w[n] = w[n] || {
+                q: [['set','aid', i]],
+                set: function(){this.q.push(['set'].concat(Array.prototype.slice.apply(arguments)))},
+                send: function(){this.q.push(['send'].concat(Array.prototype.slice.apply(arguments)))}
+            };
+
+        s = d.createElement(t);
+        a = d.getElementsByTagName(t)[0];
+        s.async = true;
+        s.crossOrigin = true;
+        s.src = u;
+        a.parentNode.insertBefore(s, a)
+    })(window, document, 'script', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'das-rpt.ucloud.cn/das.js?v=' + Math.random(), 'das', 'iywtleax');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48580821-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script>
+    document.getElementById('J_copyright-year').innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh"
+      lang="zh" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <title>安全/优盾_WEB漏洞扫描系统 UWS-UCloud文档中心</title>
+    <!--    <title>--><!-- [--><!--]</title>-->
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta name="generator" content="DokuWiki"/>
+<meta name="robots" content="index,follow"/>
+<meta name="keywords" content="security,uws_robot"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/lib/exe/opensearch.php" title="ucloud-docs"/>
+<link rel="start" href="/"/>
+<link rel="alternate" type="text/html" title="纯HTML" href="/_export/xhtml/security/uws_robot"/>
+<link rel="alternate" type="text/plain" title="Wiki Markup 语言" href="/_export/raw/security/uws_robot"/>
+<link rel="canonical" href="https://docs.ucloud.cn/security/uws_robot"/>
+<link rel="stylesheet" type="text/css" href="/lib/exe/css.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"/>
+<link rel="stylesheet" type="text/css" href="/lib/plugins/codemirror/dist/styles.min.css?v=20160703"/>
+<script type="text/javascript">/*<![CDATA[*/var NS='security';var JSINFO = {"id":"security:uws_robot","namespace":"security","move_renameokay":false,"isadmin":0,"isauth":0};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?t=ucloud&amp;tseed=ba694191af5b19e00ae916c51b1d4d8b"></script>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/JSINFO.plugin_codemirror = {"acronyms":["WYSIWYG","MathML","AFAICS","FLOSS","IANAL","AFAIK","ASCII","TL;DR","ROTFL","AFAIR","PITA","OTOH","MSIE","KISS","IMHO","IIRC","HTML","RTFM","WTF?","ASAP","spec","YMMV","LGPL","FOSS","LOL","W3C","MHz","URI","TIA","RFC","OSS","TOC","OMG","URL","IMO","FAQ","FTP","FUD","LAN","EOT","EOM","DNS","EOF","EOL","GHz","GPL","API","IRC","IRL","IOW","ACL","GUI","CMS","BTW","CSS","GB","MB","IE","OS"],"baseURL":"\/lib\/plugins\/codemirror","camelcase":false,"codesyntax":1,"entities":["<->","->","<-","<=>","=>","<=",">>","<<","---","--","(c)","(tm)","(r)","..."],"iconURL":"\/lib\/plugins\/codemirror\/settings.png","languages":["css","scilab","gwbasic","6502acme","ezt","c_mac","plsql","rexx","groovy","apache","epc","asp","netrexx","prolog","xpp","bnf","vb","clojure","modula3","cpp","m68k","falcon","gambas","ispfpanel","purebasic","smalltalk","nagios","vhdl","scala","tsql","lotusformulas","pic16","io","gettext","cpp-qt","e","gnuplot","caddcl","mpasm","scl","scheme","sas","sparql","f1","cil","stonescript","applescript","bibtex","pixelbender","llvm","freeswitch","mapbasic","ruby","hicest","oracle11","haxe","email","genie","dart","perl","fsharp","z80","parigp","arm","locobasic","div","text","bf","properties","gdb","basic4gl","4cs","fo","erlang","dos","visualprolog","boo","lotusscript","batch","68000devpac","rails","providex","octave","hq9plus","parasail","xbasic","cmake","java","mxml","reg","make","csharp","ocaml","systemverilog","vala","jcl","objeck","objc","sass","logtalk","nginx","ada","actionscript","urbi","dcs","lolcode","asm","yaml","dcl","kixtart","unicon","genero","inno","postgresql","eiffel","php-brief","mmix","pascal","vbscript","c_winapi","bascomavr","delphi","tcl","lsl2","avisynth","rsplus","asymptote","rust","fortran","whois","lisp","bash","aimms","pike","freebasic","pf","glsl","gml","idl","cuesheet","qbasic","algol68","oxygene","ecmascript","d","newlisp","verilog","awk","cfm","lb","proftpd","visualfoxpro","coffeescript","nsis","sdlbasic","sql","oberon2","ocaml-brief","powerbuilder","euphoria","java5","autoit","pcre","abap","per","pys60","blitzbasic","xml","xorg_conf","6502tasm","modula2","vbnet","latex","povray","cobol","pycon","haskell","rpmspec","html4strict","cadlisp","autohotkey","typoscript","upc","whitespace","xojo","magiksf","dcpu16","ini","oobas","klonecpp","smarty","mysql","ldif","go","javascript","6502kickass","diff","chapel","robots","thinbasic","j","chaiscript","intercal","powershell","matlab","lua","oracle8","pli","c","actionscript3","mirc","oorexx","zxbasic","teraterm","q","dot","python","autoconf","jquery","klonec","uscript","lscript","icon","rbs","winbatch","cfdg","racket","perl6","spark","vim","rebol","vedit","twig","c_loadrunner","php","oz","apt_sources","progress","html5","cpp-winapi"],"mathjax":false,"nativeeditor":"0","schemes":["http","https","telnet","gopher","wais","ftp","ed2k","irc","ldap"],"smileys":["8-)","8-O","8-o",":-(",":-)","=)",":-\/",":-\\",":-?",":-D",":-P",":-o",":-O",":-x",":-X",":-|",";-)","m(","^_^",":?:",":!:","LOL","FIXME","DELETEME"],"version":"20160703"}
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="/lib/plugins/codemirror/dist/scripts.min.js?v=20160703"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="/lib/tpl/ucloud/images/favicon.ico" />
+<link rel="apple-touch-icon" href="/lib/tpl/ucloud/images/apple-touch-icon.png" />
+        <!--    zoomify.css-->
+    <link href="https://static.ucloud.cn/7f209fe9d1655fc448f28929baafec63.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+    <script type="text/javascript">
+        var _vds = _vds || [];(function(){ _vds.push(['setAccountId', '6b767e7fa13640a48f97e18e8045c9dc']);_vds.push(['setOrigin', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'ucloud.growing.io']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8 ]><div id="IE8"><![endif]-->
+
+<div id="dokuwiki__site">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_ucloud         hasSidebar">
+                
+        <!-- ********** HEADER ********** -->
+        <div class="docs-header">
+            <div class="main">
+
+                <div class="nav-bar clearfix">
+                    <a href="https://www.ucloud.cn"  title="返回官网首页"><span class="docs-logo"></span></a>                    <div class="hz-wrapper pull-right tr">
+                        <a href="https://www.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-home"></span>官网</a>                        <a href="https://console.ucloud.cn"  title="" class="header-link" target="_blank"><span class="icon-console"></span>控制台</a>                        <div class="docs-login-wrapper logout">
+                            <a href="https://accountv2.ucloud.cn/userinfo"  class="login-user-name" title="前往用户中心"></a><a href="javascript:void(0);"  onclick="goLoginPage()" class="header-link login">登录</a><a href="https://account.ucloud.cn/cas/register"  class="header-link signup">注册</a><a href="https://account.ucloud.cn/cas/logout"  class="header-link logout" title="退出登录">退出</a>                        </div>
+                    </div>
+                </div>
+
+                <div class="header-search-bar clearfix">
+                    <div class="header-title pull-left">
+                        <a href="/index"  title="文档中心首页"><h1 class="title">文档中心</h1></a>                    </div>
+
+                    <div class="header-search-wrapper pull-right">
+                        <form action="/index" accept-charset="utf-8" class="search" id="dw__search" method="get" role="search"><div class="search-input-wrapper"><input type="hidden" name="do" value="search" /><input type="text" growing-track="true" placeholder="请输入搜索内容" autocomplete="off" disableautocomplete id="qsearch__in" accesskey="f" name="id" class="edit search-input" /><span class="icon-search"></span><button type="submit" class="header-search-btn" title="搜索">搜索</button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER TOOLS -->
+                <!-- /header -->
+
+        <div class="main J_docs-content-main" style="position: relative;">
+
+            <!-- ********** ASIDE ********** -->
+                            <div id="dokuwiki__aside">
+                    <div class="popup-pdlist-wrapper">
+                        <div class="pdlist-inner pd" data-max-height = "480"><!-- EDIT1 PLUGIN_WRAP_START [0-] --><div class="wrap_pd_list plugin_wrap">
+<div><div id="nojs_indexmenu_13292841345b22658c281cf" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Ctestdir%257Ctestsort%257Cupd-docs%257Capi-docs%257Capi-docs-az%257Capi%257Cdocs_admin%257Chide%257Cstorage_cdn%253Aumq%257Ccompute%253Aautoscaling%257Csimpleservice%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Cmessage%257Cregister%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="open"><div class="li"><a href="/compute/index" class="indexmenu_idx_head">计算</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/compute/uhost/index" class="indexmenu_idx_head">云主机 UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhybrid/index" class="indexmenu_idx_head">混合云 UHybrid</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uphost/index" class="indexmenu_idx_head">物理云主机 UPHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udhost/index" class="indexmenu_idx_head">私有专区 UDHost</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/udocker/index" class="indexmenu_idx_head">容器集群 UDocker</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/uhub/index" class="indexmenu_idx_head">公共镜像库 UHub</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/ugc/index" class="indexmenu_idx_head">通用计算 UGC</a></div></li>
+<li class="closed"><div class="li"><a href="/compute/caas" class="indexmenu_idx_head">容器服务 CaaS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/network/index" class="indexmenu_idx_head">网络</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/network/unet/index" class="indexmenu_idx_head">网络 UNet</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpc/index" class="indexmenu_idx_head">虚拟私有网络 VPC</a></div></li>
+<li class="closed"><div class="li"><a href="/network/firewall/index" class="indexmenu_idx_head">防火墙 Firewall</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vip/index" class="indexmenu_idx_head">内网虚拟IP地址 VIP</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udpn/index" class="indexmenu_idx_head">跨域通道 UDPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ulb/index" class="indexmenu_idx_head">负载均衡 ULB</a></div></li>
+<li class="closed"><div class="li"><a href="/network/pathx/index" class="indexmenu_idx_head">全球动态加速 PathX</a></div></li>
+<li class="closed"><div class="li"><a href="/network/ipsec/index" class="indexmenu_idx_head">VPN 网关 IPSec VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/vpn/index" class="indexmenu_idx_head">虚拟网络 VPN</a></div></li>
+<li class="closed"><div class="li"><a href="/network/udee/index" class="indexmenu_idx_head">内网域名解析 UDEE</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/storage_cdn/index" class="indexmenu_idx_head">存储与CDN</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/storage_cdn/ufile/index" class="indexmenu_idx_head">﻿﻿对象存储 UFile</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/udisk/index" class="indexmenu_idx_head">云硬盘 UDisk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uda/index" class="indexmenu_idx_head">数据方舟 UDataArk</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ucdn/index" class="indexmenu_idx_head">云分发 UCDN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn/index" class="indexmenu_idx_head">开放式分发节点 UODN</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/odn2.0/index" class="indexmenu_idx_head">开放式分发节点 UODN2.0</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/uarchive/index" class="indexmenu_idx_head">归档存储 UArchive</a></div></li>
+<li class="closed"><div class="li"><a href="/storage_cdn/ufs/index" class="indexmenu_idx_head">文件存储 UFS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/database/index" class="indexmenu_idx_head">数据库</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/database/udb-mysql/index" class="indexmenu_idx_head">云数据库 MySQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-mongodb/index" class="indexmenu_idx_head">云数据库 MongoDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-pgsql/index" class="indexmenu_idx_head">云数据库 PostgreSQL</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udb-sqlserver/index" class="indexmenu_idx_head">云数据库 SQL Server</a></div></li>
+<li class="closed"><div class="li"><a href="/database/umem/index" class="indexmenu_idx_head">云内存 Memcache</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uredis/index" class="indexmenu_idx_head">云内存 Redis</a></div></li>
+<li class="closed"><div class="li"><a href="/database/uddb/index" class="indexmenu_idx_head">分布式数据库 UDDB</a></div></li>
+<li class="closed"><div class="li"><a href="/database/udts/index" class="indexmenu_idx_head">数据传输 UDTS</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/video/index" class="indexmenu_idx_head">多媒体</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/video/umai/index" class="indexmenu_idx_head">媒体AI UMAI</a></div></li>
+<li class="closed"><div class="li"><a href="/video/umedia/index" class="indexmenu_idx_head">媒体工厂 UMedia</a></div></li>
+<li class="closed"><div class="li"><a href="/video/ulive/index" class="indexmenu_idx_head">直播云 ULive</a></div></li>
+<li class="closed"><div class="li"><a href="/video/uvideo/index" class="indexmenu_idx_head">视频云 UVideo</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/security/index" class="indexmenu_idx_head">安全/优盾</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/security/usa/index" class="indexmenu_idx_head">优盾 USec</a></div></li>
+<li class="closed"><div class="li"><a href="/security/usecurity/index" class="indexmenu_idx_head">DDoS基础防护</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uads/index" class="indexmenu_idx_head">高防服务 UAnti-DDoS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uhids" class="indexmenu_idx_head">主机入侵检测 UHIDS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/ussl/index" class="indexmenu_idx_head">SSL证书管理 USSL</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uewaf" class="indexmenu_idx_head">Web应用防火墙 UWAF</a></div></li>
+<li class="closed"><div class="li"><span class="curid"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></span></div></li>
+<li class="closed"><div class="li"><a href="/security/uhas/index" class="indexmenu_idx_head">堡垒机 UHAS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws/index" class="indexmenu_idx_head">WEB漏洞扫描系统（持续扫描） UWS</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udas" class="indexmenu_idx_head">数据库审计 UDB-Audit</a></div></li>
+<li class="closed"><div class="li"><a href="/security/udbcp/index" class="indexmenu_idx_head">等保合规测评服务 UDBCP</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/analysis/index" class="indexmenu_idx_head">数据分析</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/analysis/ues/index" class="indexmenu_idx_head">ES服务 Elasticsearch</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uhadoop/index" class="indexmenu_idx_head">托管集群 UHadoop</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/udw/index" class="indexmenu_idx_head">云数据仓库 UDW</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uddp/index" class="indexmenu_idx_head">分布式数据处理 UDDP</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/ukafka/index" class="indexmenu_idx_head">分布式消息系统 UKafka</a></div></li>
+<li class="closed"><div class="li"><a href="/analysis/uscheduler/index" class="indexmenu_idx_head">调度系统 UScheduler</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/ai" class="indexmenu_idx_head">人工智能</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/ai/gpu" class="indexmenu_idx_head">GPU云主机 GPU UHost</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-inference/index" class="indexmenu_idx_head">AI在线服务 UAI-Inference</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/ai-lab" class="indexmenu_idx_head">AI实验室 Vitality</a></div></li>
+<li class="closed"><div class="li"><a href="/ai/uai-train" class="indexmenu_idx_head">AI 训练服务 UAI-Train</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/management_monitor/index" class="indexmenu_idx_head">管理与监控</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/management_monitor/umon/index" class="indexmenu_idx_head">云监控 UMon</a></div></li>
+<li class="level2" ><div class="li"><a href="/management_monitor/security_lock" class="wikilink1" title="安全锁 Security Lock">安全锁 Security Lock</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/manage/index" class="indexmenu_idx_head">操作日志 ULog</a></div></li>
+<li class="closed"><div class="li"><a href="/management_monitor/uproject/index" class="indexmenu_idx_head">账号与权限管理 UAM</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/software/index" class="indexmenu_idx_head">程序应用</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/software/dns/index" class="indexmenu_idx_head">DNS应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/docker/index" class="indexmenu_idx_head">Docker应用指南</a></div></li>
+<li class="closed"><div class="li"><a href="/software/vpn" class="indexmenu_idx_head">VPN应用指南</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/charge/index" class="indexmenu_idx_head">购买和计费</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/charge/invoice/index" class="indexmenu_idx_head">发票管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/order/index" class="indexmenu_idx_head">订单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/renew/index" class="indexmenu_idx_head">续费管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/transaction/index" class="indexmenu_idx_head">交易管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/bill/index" class="indexmenu_idx_head">账单管理</a></div></li>
+<li class="closed"><div class="li"><a href="/charge/charge/index" class="indexmenu_idx_head">计费方式</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/account/index" class="indexmenu_idx_head">账号</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/account/identity_verification/index" class="indexmenu_idx_head">实名认证</a></div></li>
+<li class="closed"><div class="li"><a href="/account/register" class="indexmenu_idx_head">账号注册</a></div></li>
+<li class="closed"><div class="li"><a href="/account/remind" class="indexmenu_idx_head">用户提醒</a></div></li>
+<li class="closed"><div class="li"><a href="/account/login/index" class="indexmenu_idx_head">账号登录</a></div></li>
+<li class="closed"><div class="li"><a href="/account/security" class="indexmenu_idx_head">账号安全</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/other/index" class="indexmenu_idx_head">其他</a></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/other/zj_migrate" class="wikilink1" title="浙江可用区A升级上海二可用区B迁移建议方案">浙江可用区A升级上海二可用区B迁移建议方案</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/global" class="wikilink1" title="海外业务部署常见问题">海外业务部署常见问题</a></div></li>
+<li class="level2" ><div class="li"><a href="/other/message" class="wikilink1" title="短信包">短信包</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/beian/index" class="indexmenu_idx_head">备案</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/beian/beian1/index" class="indexmenu_idx_head">备案帮助文档</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/beianintro" class="wikilink1" title="备案服务说明">备案服务说明</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/useguide" class="wikilink1" title="备案系统使用指南">备案系统使用指南</a></div></li>
+<li class="level2" ><div class="li"><a href="/beian/faq" class="wikilink1" title="FAQ">FAQ</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/policy/index" class="indexmenu_idx_head">政策与规范</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/policy/agreement/index" class="indexmenu_idx_head">其他协议</a></div></li>
+<li class="closed"><div class="li"><a href="/policy/sla" class="indexmenu_idx_head">服务等级协议（SLA）</a></div></li>
+</ul>
+</li>
+<li class="open"><div class="li"><a href="/domain/index" class="indexmenu_idx_head">域名与网站</a></div>
+<ul class="idx">
+<li class="closed"><div class="li"><a href="/domain/udnr/index" class="indexmenu_idx_head">域名服务 UDnr</a></div></li>
+</ul></li>
+</ul>
+</div></div>
+</div><!-- EDIT2 PLUGIN_WRAP_END [0-] -->
+
+</div>                    </div>
+                    <div class="J_left-sidebar pad aside include group">
+                        
+                        <div class="sidebar-header">
+                            全部产品                            <span class="icon-sidebar-menu"></span>
+                        </div>
+
+                        <div class="docs-sidebar-wrapper">
+                            
+<div><div id="nojs_indexmenu_20327352215b226597aa4b0" data-jsajax="%26sort%3Dt%26msort%3Dindexmenu_n%26nsort%3D1%26skipns%3D%253D/%255E%2528wiki%257Cplayground%257Capi%253Aunet-api%253Anewfirewall%257Capi%253Auvideo-api%2529%2524/%26skipfile%3D%253D/%255E%2528dokuwiki%257Csyntax%257Cwelcome%257Csidebar%257Capi%253Audisk-api%253Acheck_buffer_io%257Capi%253Audisk-api%253Acheck_udisk_allowance%257Ccompute%253Auhost%253Aconcepts%257Cstorage_cdn%253Aucdn%253Acname%257Cstorage_cdn%253Aucdn%253Acommon%257Cstorage_cdn%253Aucdn%253Acname%253Afile%257Cstorage_cdn%253Aucdn%253Alive_stream%257Cstorage_cdn%253Aucdn%253Aweb%257Cstorage_cdn%253Aucdn%253Afile%257Capi%253Aufile-api%253Ainner_bucket_varibale%257Capi%253Aufile-api%253Ainner_gw_err_code%257Capi%253Aufile-api%253Ainner_proxy_err_code%257Capi%253Aufile-api%253Acreate_video_bucket%257Capi%253Aufile-api%253Aadd_bucket_domain%257Cnetwork%253Aunet%253Avip%257Cnetwork%253Aunet%253Acommon%257Cnetwork%253Aunet%253Afirewall%257Ccompute%253Acaas%253Afaq%2529%2524/" class="J_sidebar-indexmenu indexmenu_nojs">
+<div class="li"><span class="curid"><a href="/security/uws_robot" class="indexmenu_idx_head">WEB漏洞扫描系统 UWS</a></span></div>
+<ul class="idx">
+<li class="level2" ><div class="li"><a href="/security/uws_robot/concept" class="wikilink1" title="产品简介">产品简介</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/uws_robot/quick" class="wikilink1" title="快速上手">快速上手</a></div></li>
+<li class="open"><div class="li"><a href="/security/uws_robot/operation" class="indexmenu_idx_head">操作指南</a></div>
+<ul class="idx">
+<li class="level3" ><div class="li"><a href="/security/uws_robot/operation/tasks" class="wikilink1" title="1、任务管理">1、任务管理</a></div></li>
+<li class="level3" ><div class="li"><a href="/security/uws_robot/operation/domains" class="wikilink1" title="2、域名管理">2、域名管理</a></div></li>
+</ul>
+</li>
+<li class="level2" ><div class="li"><a href="/security/uws_robot/price" class="wikilink1" title="产品价格">产品价格</a></div></li>
+<li class="level2" ><div class="li"><a href="/security/uws_robot/agreement" class="wikilink1" title="漏洞扫描协议">漏洞扫描协议</a></div></li>
+</ul></li>
+</div></div>
+
+
+                        </div>
+                                                <div class="clearer"></div>
+                    </div>
+                </div><!-- /aside -->
+            
+            <!-- ********** CONTENT ********** -->
+            <div id="dokuwiki__content">
+                <div class="pad docs-content">
+                                        
+                    <!-- BREADCRUMBS -->
+                                            <div class="breadcrumbs content-breadcrumbs"><span class="home"><a href="/index" class="wikilink1">文档中心</a></span> > <a href="/security/index" class="wikilink1">安全/优盾</a> > WEB漏洞扫描系统 UWS</div>
+                    
+                    <div class="page docs-main-content">
+                        <!-- wikipage start -->
+                        
+
+
+<h1 class="sectionedit1" id="web漏洞扫描系统_uws">WEB漏洞扫描系统 UWS</h1>
+<div class="level1">
+
+<p>
+网站的风险漏洞是站点被攻击的根源。UCloud网站安全评估服务通过远程的网站漏洞扫描服务，客户无需安装任何插件，即可获得网站的漏洞态势，以及每个漏洞的修补建议。
+</p>
+
+<p>
+该服务支持远程扫描多种系统漏洞和按照国际权威安全机构WASC分类的25种Web应用漏洞，全面覆盖OWASP Top 10 Web应用风险。
+</p>
+
+<div><div id="nojs_indexmenu_19562865655b226638d32b4" data-jsajax="%26sort%3Dt%26nsort%3D1" class="J_sidebar-indexmenu indexmenu_nojs">
+
+<ul class="idx">
+<li class="level1" ><div class="li"><a href="/security/uws_robot/price" class="wikilink1" title="产品价格">产品价格</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uws_robot/concept" class="wikilink1" title="产品简介">产品简介</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uws_robot/quick" class="wikilink1" title="快速上手">快速上手</a></div></li>
+<li class="closed"><div class="li"><a href="/security/uws_robot/operation" class="indexmenu_idx_head">操作指南</a></div></li>
+<li class="level1" ><div class="li"><a href="/security/uws_robot/agreement" class="wikilink1" title="漏洞扫描协议">漏洞扫描协议</a></div></li>
+</ul>
+</div></div>
+
+</div>
+
+                        <!-- wikipage stop -->
+                        <div class="clearer"></div>
+                    </div>
+
+                                        <div class="docs-support-bar">
+                        如有疑问请联系
+                        <a href="https://www.ucloud.cn/site/service.html"  title="点击访问技术支持页面" target="_blank">技术支持</a>                    </div>
+                    
+                                                        </div>
+            </div><!-- /content -->
+
+            <div class="clearer"></div>
+            <!--            <hr class="a11y" />-->
+
+            <!-- PAGE ACTIONS -->
+                    </div><!-- /wrapper -->
+
+        <!-- ********** FOOTER ********** -->
+        
+        <div class="page-footer-copyright">
+            Copyright © 2012-<span id="J_copyright-year"></span> UCloud 上海优刻得信息科技有限公司 ｜
+            <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">沪ICP备 12020087</a>
+        </div>
+            </div>
+</div>
+
+<!--service tool-->
+<div class="service-tool">
+    <div class="content">
+        <a href="#service-tool-support" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-wechat"></span>
+            </div>
+        </a>
+        <a target="_blank" href="https://beianv2.ucloud.cn/">
+            <div class="link-wrap">
+                <span class="icon-urecord"></span>
+            </div>
+        </a>
+        <a href="#service-tool-qrcode" class="J_service-tool-link">
+            <div class="link-wrap">
+                <span class="icon-qr-code"></span>
+                <div class="service-tool-tips qrcode" id="service-tool-qrcode">
+                    <span class="service-caret"></span>
+                    <div class="content-wrapper">
+                        <img src="https://static.ucloud.cn/e69a4f822d7bfeb1cbc4104ab2d1fb3a.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="link-wrap back-to-top">
+            <span class="icon-arrow-up"></span>
+        </div>
+        <div class="service-tool-tips support" id="service-tool-support">
+            <span class="service-caret"></span>
+            <div class="content-wrapper">
+                <div class="content-cell blue">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售前咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://www.ucloud.cn/4000188113" target="_blank">线上咨询（5x9h）</a>
+                </div>
+                <span class="tips-division"></span>
+                <div class="content-cell purple">
+                    <p class="title">
+                        <span class="title-line"></span>
+                        售后咨询
+                    </p>
+                    <a class="detail" href="https://www.ucloud.cn/site/service.html" target="_blank">更多 > </a>
+                    <a class="bottom-part" href="https://accountv2.ucloud.cn/work_ticket" target="_blank">提交工单（5x24h）</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/service tool-->
+
+<!-- /site -->
+<div class="no" style="display: none;">
+    <img src="/lib/exe/indexer.php?id=security%3Auws_robot&amp;1529282997" width="2" height="1" alt="" /></div>
+<!--[if lte IE 8 ]>
+</div>
+<![endif]-->
+<!--jquery.scrollspy.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/6821cfdf2e223c0b0edceb6bf289b3e7.js"></script>
+<!--jquery.sticky-kit.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/5ebb3e6fb52217114a3ddeff2534b343.js"></script>
+<!--jquery.zoomify.js-->
+<script type="text/javascript" src="https://static.ucloud.cn/091743cc037b6bacc06b92c7180d1373.js"></script>
+<!--jquery.scrollbar.js-->
+<!--<script type="text/javascript" src="https://static.ucloud.cn/0a3162ccea29242045f56283d0a8a281.js"></script>-->
+<script>
+    (function(w, d, t, u, n, i, s, a) {
+        w[n] = w[n] || {
+                q: [['set','aid', i]],
+                set: function(){this.q.push(['set'].concat(Array.prototype.slice.apply(arguments)))},
+                send: function(){this.q.push(['send'].concat(Array.prototype.slice.apply(arguments)))}
+            };
+
+        s = d.createElement(t);
+        a = d.getElementsByTagName(t)[0];
+        s.async = true;
+        s.crossOrigin = true;
+        s.src = u;
+        a.parentNode.insertBefore(s, a)
+    })(window, document, 'script', ('https:' == document.location.protocol ? 'https://' : 'http://') + 'das-rpt.ucloud.cn/das.js?v=' + Math.random(), 'das', 'iywtleax');
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48580821-1', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+<script>
+    document.getElementById('J_copyright-year').innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>
